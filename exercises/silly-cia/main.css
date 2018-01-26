@@ -1,0 +1,38 @@
+body {
+	margin: 200px;
+}
+
+h1 {
+	color: #006400;
+}
+
+h1, h2 {
+	font-family: Georgia;
+	text-align: center;
+}
+
+p {
+	line-height: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.capital {
+	text-transform: uppercase;
+}
+
+img {
+	float: left;
+	padding-right: 25px;
+}
+
+ul {
+	display: inline-block;
+	margin-left: 0px;
+}

@@ -1,0 +1,3 @@
+function helloClass(displayed_string) {
+	console.log("Hello " + displayed_string + "!");
+}

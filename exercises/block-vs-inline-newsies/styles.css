@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.top {
+	margin-top: 40px;
+}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 3px solid black;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0px;
+	right: 0px;
+	margin-top: -15px;
+	padding-top: 10px;
+	background-color: white;
+}
+
+main section {
+	display: inline-block;
+	width: 28%;
+	margin: 2%;
+}
+
+span {
+	font-size: 125%;
+	font-weight: 200%;
+}
+
+a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+.ad {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.ad:hover {
+	background: rgb(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.ad img {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10px;
+}
+
+main {
+	display: inline-block;
+	width: 75%;
+}
+
+.classified {
+	display: inline-block;
+	width: 23%;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+p {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.ad p {
+	text-align: center;
+}
+
+main img {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+main section {
+	vertical-align: top;
+}
+
+.hook {
+	font-weight: 130%;
+	font-size: 125%;
+}
+
+footer {
+	text-align: center;
+}
+
