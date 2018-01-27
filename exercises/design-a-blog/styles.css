@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(255,200,150);
+}
+
+body {
+	margin: 20px;
+	margin-top: 60px;
+}
+
+main {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+nav h3 {
+	display: inline;
+	padding: 0px;
+	padding-right: 20px;
+	border-right: 1px solid black;
+	position: relative;
+	top: 7px;
+}
+
+nav h3, nav a {
+	font-size: 22px;
+	color: black;
+	margin-left: 20px;
+}
+
+nav ul {
+	list-style: none;
+	position: absolute;
+	vertical-align: middle;
+	display: inline;
+	margin: 0px;
+	margin-left: 10px;
+	padding: 0px;
+	top: 7px;
+}
+
+nav ul li {
+	display: inline;
+}
+
+
+nav a {
+	text-decoration: none;
+	padding: 10px;
+	margin: 0px;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+img {
+	zoom: 50%;
+	margin: 40px; 
+	/* Margin has to be double due to zoom */
+}
+
+img.left {
+	float: left;
+	margin-left: 0px;
+}
+
+img.right {
+	float: right;
+	margin-right: 0px;
+}
+
+img.top {
+	margin-top: 0px;
+}
+
+section p {
+	font-size: 18px;
+}
+
+main section  {
+	padding-bottom: 30px;
+	border-bottom: 1px dashed black;
+	margin-bottom: 50px;
+}
+
+main h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+main h4 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
