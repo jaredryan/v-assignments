@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Passenger Information</h1>
+	<form name="info">
+		<label>First Name:</label><input type="text" name="firstName"/>
+		<label>Last Name:</label><input type="text" name="lastName"/>
+		<label>Age:</label><input type="number" name="age"/>
+		<div class="gender_info">
+			<label>Gender:</label>
+			<label><input type="radio" name="gender" value="Male"/>Male</label>
+			<label><input type="radio" name="gender" value="Female"/>Female</label>
+			<label><input type="radio" name="gender" value="Non Binary"/>Non-binary</label>
+		</div>
+		<div class="location_info">
+			<label>Location(s):</label>
+			<label><input type="checkbox" name="locations" value="Salt Lake City"/>Salt Lake City, Utah</label>
+			<label><input type="checkbox" name="locations" value="Detroit, Michigan"/>Detroit, Michigan</label>
+			<label><input type="checkbox" name="locations" value="Miami, Florida"/>Miami, Florida</label>
+			<label><input type="checkbox" name="locations" value="Denver, Colorado"/>Denver, Colorado</label>
+			<label><input type="checkbox" name="locations" value="San Francisco, California"/>San Francisco, California</label>
+		</div>
+		<div class="dietary_info">
+			<label>Dietary Restrictions:</label>
+			<label><input type="checkbox" name="diet_restrictions" value="Vegetarian"/>Vegetarian</label>
+			<label><input type="checkbox" name="diet_restrictions" value="Kosher"/>Kosher</label>
+			<label><input type="checkbox" name="diet_restrictions" value="Lactose Free"/>Lactose Free</label>
+		</div>
+		<button>Submit</button>
+	</form>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
