@@ -111,6 +111,12 @@ h3 {
 	margin-top: 15px;
 }
 
+h5 {
+	font-size: 19px;
+	margin: 10px;
+	font-weight: 600;
+}
+
 main h6 {
 	font-size: 18px;
 	margin: 10px;
