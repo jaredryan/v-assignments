@@ -4,8 +4,7 @@ document.info.addEventListener("submit", function(e) {
 	var lastName = document.info.lastName.value;
 	var age = document.info.age.value;
 	var gender = document.info.gender.value;
-	var locationsArray = document.querySelectorAll("input[name=locations]:checked")
-	var locations = arrayToString(locationsArray);
+	var location = document.info.location.value;
 	var dietRestrictionsArray = document.querySelectorAll("input[name=diet_restrictions]:checked")
 	var dietRestrictions = arrayToString(dietRestrictionsArray);
 	
@@ -13,7 +12,7 @@ document.info.addEventListener("submit", function(e) {
 			"Last Name: " + lastName + "\n" + 
 			"Age: " + age + "\n" + 
 			"Gender: " + gender + "\n" + 
-			"Location(s): " + locations + "\n" + 
+			"Location: " + location + "\n" + 
 			"Dietary Restrictions: " + dietRestrictions;
 	window.alert(str);
 });
