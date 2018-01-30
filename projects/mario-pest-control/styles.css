@@ -160,6 +160,14 @@ footer p {
 	margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 1125px)  {
+	input {
+		display: block;
+		margin: 5px auto;
+		text-align: center;
+	}
+}
+
 @media only screen and (max-width: 730px)  {
 	main div {
 		width: 49%;
@@ -181,25 +189,17 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 350px)  {
+@media only screen and (max-width: 380px)  {
 	main div {
 		width: 98%;
 	}
 	h1 {
-		font-size: 30px;
+		font-size: 29px;
 	}
 	nav img {
 		zoom: 38%;
 	}
 	nav {
 		height: 56px;
-	}
-}
-
-@media only screen and (max-width: 1125px)  {
-	input {
-		display: block;
-		margin: 5px auto;
-		text-align: center;
 	}
 }
