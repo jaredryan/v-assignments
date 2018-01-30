@@ -5,6 +5,7 @@
 
 body {
 	background-color: rgb(255, 100, 100);
+	margin: 0px;
 }
 
 main {
@@ -25,8 +26,6 @@ main {
 	background-size: cover;
 	z-index: 1;
 	border-top: 2px solid black;
-	margin-left: -8px;
-	margin-right: -8px;
 	border-bottom: 1px dashed black;
 }
 
@@ -76,16 +75,10 @@ button:hover {
 nav {
 	position: relative;
     height: 65px;
-    width: 110%;
+    width: 100%;
     text-align: center;
     margin: auto;
     background: white;
-    border: 10px;
-    z-index: 0;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-top: 5px;
 }
 
 main img {
@@ -204,7 +197,3 @@ footer p {
 		text-align: center;
 	}
 }
-
-
-
-
