@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario Pest Control</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav>
+		<h1>Mario Pest Control</h1>
+		<img src="https://www.mariowiki.com/images/thumb/8/87/Mariohat.jpg/180px-Mariohat.jpg">
+	</nav>
+	<div class="overlay">
+		<main>
+			<form name="pests">
+				<label>Goombas:</label>
+				<input type="number" name="goombas" min="0"/>
+				<label>Bob-ombs:</label>
+				<input type="number" name="bob_ombs" min="0"/>
+				<label>Cheep-cheeps:</label>
+				<input type="number" name="cheep_cheeps" min="0"/>
+				<br/>
+				<button type="submit">Calculate Bill!</button>
+			</form>
+			<div id="goombas">
+				<header>Goombas</header>
+				<img src="https://vignette.wikia.nocookie.net/nintendo/images/d/d5/GoombaNSMB.png/revision/latest?cb=20110724131649&path-prefix=en" alt="Goomba">
+				<h6>Number Caught: <span id="goombas_caught"></span></h6>
+			</div>
+			<div id="bob-ombs">
+				<header>Bob-ombs</header>
+				<img src="https://vignette.wikia.nocookie.net/nintendo/images/8/86/Bob-omb_%28MKWii%29.png/revision/latest?cb=20120819225302&path-prefix=en" alt="Bob-omb">
+				<h6>Number Caught: <span id="bob_ombs_caught"></span></h6>
+			</div>
+			<div id="cheep-cheeps">
+				<header>Cheep-cheeps</header>
+				<img src="https://www.mariowiki.com/images/thumb/6/63/CheepCheepNSMBU.png/200px-CheepCheepNSMBU.png" alt="Cheep-cheep">
+				<h6>Number Caught: <span id="cheep_cheeps_caught"></span></h6>
+			</div>
+			<h3>Total Price: <span id="total_cost"></span></h3>
+		</main>
+	</div>
+	<footer>
+		<h4>Mario's Contact Information</h4>
+		<h6>Email Address: </h6><p>shrooooooooms@mushroomkingdom.com</p>
+		<br/>
+		<h6>Website: </h6><p class="fake-url">www.pestsuperajumpa.com</p>
+		<br/>
+		<h6>Address: </h6><p>1000 Giant Mushrooms, Marioland, Mushroom Kingdom</p>
+	</footer>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
