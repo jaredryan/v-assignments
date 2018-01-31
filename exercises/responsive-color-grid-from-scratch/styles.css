@@ -1,0 +1,47 @@
+* {
+	font-size: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	width: 60%;
+	margin: auto;
+}
+
+div {
+	display: inline-block;
+	height: 150px;
+	border: 5px solid white;
+}
+
+.pink {
+	background-color: #F5C6D6;
+	width: 100%;
+}
+
+.magenta {
+	background-color: #EE2E84;
+	width: 25%
+}
+
+.light-blue {
+	background-color: #85CFD8;
+	width: 50%;
+}
+
+.green {
+	background-color: #8DC63F;
+	width: 75%;
+}
+
+.orange {
+	background-color: #E76E34;
+	width: 25%;
+}
+
+@media (max-width: 768px) {
+	.pink, .magenta, .light-blue, .green, .orange {
+		display: block;
+		width: 100%;
+	}
+}
