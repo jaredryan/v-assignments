@@ -1,4 +1,4 @@
-## Mario Pest Control
+# Mario Pest Control
 
 This is the file associated with the Daily Planet Editor project, which can be found at https://coursework.vschool.io/mario-pest-control/.
 
