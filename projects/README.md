@@ -3,8 +3,8 @@ Projects are assignments specifically geared towards testing our ability to demo
 In the beginning, they're typically due in 1 or 2 days. Towards the end of the 12-week course, we're usually given 1 to 2 weeks to complete a project.
 
 Week 1:
-	daily-planet-editor: It taught us how to change code so it follows JavaScript conventions and some debugging
+- daily-planet-editor: It taught us how to change code so it follows JavaScript conventions and some debugging
 
 Week 2:
-	mario-pest-control: A project where we worked on HTML, CSS, and some very basic JavaScript. The user inputs how many creatures Mario caught and how much he should get paid for it. I also made it responsive so it works well on the phone.
-	business-type: A project to practice making static websites, using various HTML and CSS techniques. It is also responsive. My project was more focused on compiling useful information for myself, since I decided that the website was about getting a software project. 
+- mario-pest-control: A project where we worked on HTML, CSS, and some very basic JavaScript. The user inputs how many creatures Mario caught and how much he should get paid for it. I also made it responsive so it works well on the phone.
+- business-site: A project to practice making static websites, using various HTML and CSS techniques. It is also responsive. My project was more focused on compiling useful information for myself, since I decided that the website was about getting a software project. 
