@@ -9,6 +9,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 50px;
 	width: 80%;
+	font-size: 0px;
 }
 
 nav {
@@ -65,6 +66,32 @@ nav h1:hover {
 	color: silver;
 }
 
+.subheader {
+	color: white;
+	font-size: 25px;
+	text-align: left;
+	font-weight: 500;
+}
+
+ol.in-text-list {
+	list-style: decimal;
+}
+
+ul.in-text-list {
+	list-style: none;
+}
+
+.in-text-list > li {
+	color: rgb(240, 190, 0);
+	font-size: 19px;
+	/*color: rgb(170, 0, 100); red*/
+	/*color: rgb(150, 255, 0); green*/
+}
+
+ul.in-text-list > li::before {
+	content: "> ";
+}
+
 h2 {
 	color: rgb(170, 0, 100);
 	text-align: center;
@@ -79,26 +106,45 @@ main > h3 {
 
 li > h3 {
 	color: rgb(0, 255, 255);
-	font-size: 22px;
+	font-size: 24px;
 	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-ol {
+main > ol {
 	font-size: 22px;
 	list-style: none;
 	padding: 0px;
 }
 
-li {
+main > li {
 	color: rgb(0, 255, 255);
 	display: block;
 }
 
 p {
 	color: white;
-	font-size: 19px;
+	font-size: 20px;
+}
+
+h5 {
+	color: rgb(0, 255, 255);;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+main a > li, main a {
+	color: rgb(80, 80, 190);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.links {
+	list-style: none;
 }
 
 .text-left {
@@ -114,6 +160,15 @@ img {
 	margin: 40px;
 }
 
+#first {
+	zoom: 50%;
+}
+
+#second {
+	zoom: 20%;
+	margin: 100px;
+}
+
 .img-left {
 	margin-left: 0px;
 	float: left;
@@ -123,18 +178,3 @@ img {
 	margin-right: 0px;
 	float: right;
 }
-
-#first {
-	zoom: 50%;
-}
-
-#second {
-	zoom: 33%;
-	margin-right: 63px;
-}
-
-#third {
-	zoom: 50%;
-	margin-bottom: 60px;
-}
-

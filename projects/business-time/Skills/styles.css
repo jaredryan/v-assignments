@@ -9,6 +9,7 @@ body {
 	margin-top: 100px;
 	margin-bottom: 50px;
 	width: 80%;
+	font-size: 0px;
 }
 
 nav {
@@ -77,28 +78,52 @@ main > h3 {
 	font-size: 30px;
 }
 
-li > h3 {
+li > h3, .conclusion {
 	color: rgb(0, 255, 255);
-	font-size: 22px;
+	font-size: 24px;
 	display: inline-block;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-ol {
+.conclusion {
+	display: block;
+}
+
+main > ol {
 	font-size: 22px;
 	list-style: none;
 	padding: 0px;
 }
 
-li {
+main > li {
 	color: rgb(0, 255, 255);
 	display: block;
 }
 
 p {
 	color: white;
-	font-size: 19px;
+	font-size: 20px;
+}
+
+h5 {
+	color: rgb(0, 255, 255);;
+	font-size: 21px;
+	font-weight: 500;
+}
+
+main a > li, main a {
+	color: rgb(80, 80, 190);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.links {
+	list-style: none;
 }
 
 .text-left {
@@ -111,30 +136,37 @@ p {
 
 img {
 	vertical-align: top;
-	margin: 40px;
+	margin: 20px;
+}
+
+#first {
+	zoom: 110%;
+	margin: 18px;
+	margin-right: 0px;
+}
+
+#second {
+	zoom: 70%;
+	margin: 29px;
+	margin-left: 0px;
+}
+
+#third {
+	zoom: 35%;
+	margin: 57px;
+	margin-right: 0px;
+}
+
+#fourth {
+	zoom: 45%;
+	margin: 44px;
+	margin-left: 0px;
 }
 
 .img-left {
-	margin-left: 0px;
 	float: left;
 }
 
 .img-right {
-	margin-right: 0px;
 	float: right;
 }
-
-#first {
-	zoom: 50%;
-}
-
-#second {
-	zoom: 33%;
-	margin-right: 63px;
-}
-
-#third {
-	zoom: 50%;
-	margin-bottom: 60px;
-}
-
