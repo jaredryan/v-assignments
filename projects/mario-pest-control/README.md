@@ -1,0 +1,1 @@
+mario-pest-control: A project where we worked on HTML, CSS, and some very basic JavaScript. The user inputs how many creatures Mario caught and how much he should get paid for it. I also made it responsive so it works well on the phone.
