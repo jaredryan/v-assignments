@@ -2,7 +2,7 @@
 
 This is the file associated with the Business Time project, which can be found at https://coursework.vschool.io/business-time/.
 
-This project has been hosted on a separate repository in order to be hosted on the web here: click [here](https://jaredryan.github.io/tech-jobprep/).
+This project has been hosted on a separate repository in order to be hosted on the web: click [here](https://jaredryan.github.io/tech-jobprep/).
 
 In this project, we suppose that we are starting a new business and need a website, and we are too broke to pay someone else to do, so we have to make it.
 
