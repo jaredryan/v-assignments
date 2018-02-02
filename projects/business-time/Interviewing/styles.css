@@ -150,6 +150,11 @@ article h6 {
 	clear: both;
 }
 
+article > h6 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
 main a {
 	color: rgb(80, 80, 190);
 	font-size: 20px;
@@ -179,28 +184,161 @@ img {
 }
 
 #first {
-	margin: 20px;
+	zoom: 120%;
+	margin: 17px;
 	margin-top: 0px;
+	margin-right: 0px;
 }
 
 #second {
 	zoom: 33%;
 	margin: 62px;
 	margin-top: 0px;
+	margin-left: 0px;
 }
 
 #third {
 	margin: 57px;
 	margin-top: 0px;
 	zoom: 35%;
+	margin-right: 0px;
 }
 
 .img-left {
-	margin-left: 0px;
 	float: left;
 }
 
 .img-right {
-	margin-right: 0px;
 	float: right;
+}
+
+.dropdown {
+	display: none;
+}
+
+article {
+	clear: both;
+	margin-top: 0px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 830px) {
+	#second {
+		zoom: 25%;
+		margin: 80px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	#first {
+		zoom: 100%;
+		margin: 20px;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	#third {
+		margin: 72px;
+		margin-top: 0px;
+		zoom: 28%;
+		margin-right: 0px;
+	}
+
+	#first, #second, #third {
+
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	#first, #second, #third {
+		zoom: 100%;
+		margin: 20px auto;
+		width: 100%;
+		display: block;
+	}
+
+	.img-left, .img-right {
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	nav h1 {
+		border-right: none;
+	}
+
+	.large {
+		display: none;
+	}
+
+	.dropdown {
+		display: block;
+	}
+
+	.dropbtn {
+		position: absolute;
+		right: 20px;
+		top: 0px;
+		background-color: grey;
+	    color: black;
+	    padding: 5px;
+	    padding-top: 18.5px;
+	    padding-bottom: 16.5px;
+	    margin: 0px;
+	    font-size: 20px;
+	    border: none;
+	    cursor: pointer;
+	    float: right;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: white;
+	}
+
+	.dropdown {
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    right: 0px;
+	    background-color: black;
+	    min-width: 140px;
+	    z-index: 1;
+	    text-align: center;
+	}
+
+	.dropdown-content a {
+		margin: 0px;
+		padding: 0px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	.dropdown-content li {
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    border: 1px solid white;
+	    display: block;
+	}
+
+	.dropdown-content li:hover {
+		background-color: white;
+		border: 1px solid black;
+		color: black;
+	}
+
+	.show {
+		display:block;
+	}
+
+	.dropdown-content li {
+		list-style: none;
+		font-size: 18px;
+		color: rgb(0, 255, 255);
+	}
 }

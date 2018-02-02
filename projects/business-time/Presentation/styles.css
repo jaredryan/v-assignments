@@ -73,6 +73,11 @@ nav h1:hover {
 	font-weight: 500;
 }
 
+.in-text-list {
+	display: block;
+	clear: both;
+}
+
 ol.in-text-list {
 	list-style: decimal;
 }
@@ -152,7 +157,9 @@ a:hover {
 }
 
 .text-right {
-	text-align: right;
+	text-align: center;
+	display: block;
+	clear: both;
 }
 
 img {
@@ -162,6 +169,9 @@ img {
 
 #first {
 	zoom: 50%;
+	display: block;
+	clear: both;
+	margin: 40px auto;
 }
 
 #second {
@@ -169,12 +179,121 @@ img {
 	margin: 100px;
 }
 
-.img-left {
-	margin-left: 0px;
-	float: left;
-}
-
 .img-right {
 	margin-right: 0px;
 	float: right;
+}
+
+.dropdown {
+	display: none;
+}
+
+@media only screen and (min-width: 1150px) {
+	#first {
+		zoom: 65%;
+		margin: 31px auto;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	#first {
+		zoom: 85%;
+		margin: 24px auto;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	#second {
+		zoom: 15%;
+		margin: 133px;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	#first, #second {
+		zoom: 100%;
+		width: 100%;
+		margin: 20px auto;
+		float: none;
+		display: block;
+	}
+
+	.text-left {
+		text-align: center;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	nav h1 {
+		border-right: none;
+	}
+
+	.large {
+		display: none;
+	}
+
+	.dropdown {
+		display: block;
+	}
+
+	.dropbtn {
+		position: absolute;
+		right: 20px;
+		top: 0px;
+		background-color: grey;
+	    color: black;
+	    padding: 5px;
+	    padding-top: 18.5px;
+	    padding-bottom: 16.5px;
+	    margin: 0px;
+	    font-size: 20px;
+	    border: none;
+	    cursor: pointer;
+	    float: right;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: white;
+	}
+
+	.dropdown {
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    right: 0px;
+	    background-color: black;
+	    min-width: 140px;
+	    z-index: 1;
+	    text-align: center;
+	}
+
+	.dropdown-content a {
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    border: 1px solid white;
+	    display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: white;
+		border: 1px solid black;
+	}
+
+	.dropdown-content li:hover {
+		color: black;
+	}
+
+	.show {
+		display:block;
+	}
+
+	.dropdown-content li {
+		list-style: none;
+		font-size: 18px;
+		color: rgb(0, 255, 255);
+	}
 }
