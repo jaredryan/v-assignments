@@ -202,29 +202,27 @@ function decisionLoop(area) {
 		// console.log(newEvents);
 	}
 
+	// Remove dialogue if you return to the area
+	area.story = function(){};
 	// Produce string array for where to go next.
-	console.log("hey");
-	var newArea = [];
+	var newAreas = [];
 	var areaIndex;
 	for (var i = 0; i < area.connectedAreas.length; i++) {
 		areaIndex = area.connectedAreas[i];
-		newArea.push(areas[areaIndex].name);
+		newAreas.push(areas[areaIndex].name);
 	}
-	console.log("you");
-	// Remove dialogue if you return to the area
-	area.story = function(){};
-	if (newArea.length === 0) {
-		console.log("You cannot leave the area.");
-		decisionLoop(area);
+	// Check if you can leave the area.
+	if (newAreas.length === 0) {
+		console.log("But, you cannot leave the area.");
+		return decisionLoop(area);
 	}
-	console.log("what");
-	var newIndex = readlineSync.keyInSelect(newArea, "Where do you want to go?");
+	// Return index of next area, or return the same area if canceled.
+	var newIndex = readlineSync.keyInSelect(newAreas, "Where do you want to go?");
 	if (newIndex === -1) {
-		console.log("sooo");
-		return area.number
+		console.log("You decided to stay in the area.");
+		return decisionLoop(area);
 	}
-	console.log("yeah");
-	return newIndex;	
+	return newIndex;
 }
 
 /* COMMON CONSEQUENCES(ARGUMENTS) OF YOUR CHOICES:
@@ -266,7 +264,7 @@ function checkStatus(player) {
 
 // Opens menu to unlocked connected areas.
 function leaveTheArea() {
-	console.log("You leave the area.");
+	console.log("You decide to leave the area.");
 	return false;
 }
 
@@ -807,7 +805,6 @@ var gameInProgress = true;
 while (gameInProgress) {
 	area = areas[currentAreaIndex];
 	connectedIndex = decisionLoop(area);
-	console.log(connectedIndex);
 	currentAreaIndex = area.connectedAreas[connectedIndex];
 }
 
