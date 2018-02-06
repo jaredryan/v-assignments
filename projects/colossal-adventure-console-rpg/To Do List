@@ -1,0 +1,17 @@
+To Do List
+
+TEST THESE
+1. Write the rest of the events
+2. Test the latest decision loop system
+3. Could change it so instead of throwing errors to end the game, I exit out of the loop gracefully
+
+
+
+
+
+
+
+You start in a room. You leave.
+
+You look around. You see cutesy things. You get confused. You can move forward
+into the room across the hall, or take the left or right hallway.
