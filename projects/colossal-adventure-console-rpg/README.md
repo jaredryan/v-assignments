@@ -1,32 +1,17 @@
-Notes:
+## Colossal Adventure Console RPG
 
-TODO
-Use item isn't working
-Inventory has a cap of 10 items.
+This is the file associated with the Colossal Adventure Console RPG, which can be found at http://coursework.vschool.io/colossal-adventure-console-rpg/.
 
-LATER
-Print messages for what the item does.
+The RPG project is a text game that runs in the terminal through node. It contains 1000+ lines of code that that allows the user to play an RPG with scary bunnies. The game's mechanics and systems required a large amount of organized code, and a decent amount of code consists of lines of dialogue.
 
-Define how I want to use the enemy.reward function. I must:
-	1. Give the player health
-	2. Give the player a random item
-	*** Should I allow the player to level up? Create a player.levelUp() method, and keep track of experience points?
-
-Update the array of enemies.
-	+ Should different enemies be more common?
-
-Find a way to always allow the user to print their current status.
-
-Should players/enemies have defense as well?
-
-Wrote an arbitrary reward function for the first enemy, need to do for all enemies.
-
-Define a universal way to use items...
-	1. Items cause damage
-	2. Items can heal
-	3. Items can help you run.
-	4. Weapons? Defense? Magic/Special attacks?
-
-What is my story?
-
-Figure out how to incorporate walking/random fights into the game (w should mean to walk)
+The games includes the following:
+- A main character
+- Random enemies
+- Forced encounters
+- Requests and uses user input to make decisions or gather information
+- Interactive--if the user makes certain decisions, new decisions become available
+- A turn-based fight system, where the player can attack, flee, or use items
+- Defeating an enemy nets the player items and some health
+- A navigation system to go from room to room as the player desires
+- The ability to print the current status at any time
+- The ability to quit the game at almost any time
