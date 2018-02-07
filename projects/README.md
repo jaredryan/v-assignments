@@ -10,3 +10,6 @@ Week 1:
 Week 2:
 - mario-pest-control: A project where we worked on HTML, CSS, and some very basic JavaScript. The user inputs how many creatures Mario caught and how much he should get paid for it. I also made it responsive so it works well on the phone.
 - business-site: A project to practice making static websites, using various HTML and CSS techniques. It is also responsive. My project was more focused on compiling useful information for myself, since I decided that the website was about getting a software project. 
+
+Week 3:
+- colossal-adventure-console-rpg: A project that runs in the terminal through node. This is a collection of code that allows the user to play an RPG with scary bunnies; the game's mechanics and systems required a large amount of organized code.
