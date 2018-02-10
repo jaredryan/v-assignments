@@ -1,0 +1,124 @@
+* {
+	font-size: 0px;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+audio {
+	margin-bottom: 30px;
+}
+
+body {
+	width: 90%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+div div {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	margin: 20px;
+	box-shadow: 5px 5px white;
+	transition-duration: 0.5s;
+	border: 1px solid black;
+}
+
+div div:hover {
+	width: 220px;
+	height: 220px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 5px 5px rgb(50, 50, 50);
+	border: 2px solid black;
+	position: relative;
+}
+
+.top-left {
+	background-color: blue;
+}
+
+.top-left:hover {
+	right: 20px;
+	bottom: 20px;
+}
+
+.top {
+	background-color: red;
+}
+
+.top:hover {
+	bottom: 20px;
+}
+
+.top-right {
+	background-color: yellow;
+}
+
+.top-right:hover {
+	left: 20px;
+	bottom: 20px;
+}
+
+.left {
+	background-color: green;
+}
+
+.left:hover {
+	right: 20px;
+}
+
+.center {
+	background-color: grey;
+}
+
+.center:hover {
+	
+}
+
+.right {
+	background-color: orange;
+}
+
+.right:hover {
+	left: 20px;
+}
+
+.bottom-left {
+	background-color: purple;
+}
+
+.bottom-left:hover {
+	right: 20px;
+	top: 20px;
+}
+
+.bottom {
+	background-color: brown;
+}
+
+.bottom:hover {
+	top: 20px;
+}
+
+.bottom-right {
+	background-color: pink;
+}
+
+.bottom-right:hover {
+	left: 20px;
+	top: 20px;
+}
+
+.top-right:hover, .bottom-right:hover, .top-left:hover, .bottom-left:hover, .center:hover {
+	background-color: black;
+	border: 2px solid white;
+}

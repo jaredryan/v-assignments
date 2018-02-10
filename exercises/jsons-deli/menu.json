@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "Mozzarrela Sticks",
+            "ingredients": ["cheese", "batter", "beer", "marinara sauce"],
+            "description": "Best melt-in-your-math appetizer you'll have"
+        },
+        {
+            "name": "Bread Sticks",
+            "ingredients": ["bread"],
+            "description": "With marinara and alfredo, you can't go wrong with olive garden breadsticks"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "Turkey",
+            "ingredients": ["turkey", "bread", "cheese", "lettuce", "tomato", "mayo"],
+            "description": "Delicious meat. Delicious bread. Fresh Ingredients. Enjoy."
+        },
+        {
+            "name": "BLT",
+            "ingredients": ["bacom", "bread", "cheese", "lettuce", "tomato", "mayo"],
+            "description": "Bacon. Bread. Fresh Ingredients. Can't beat the classics."
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Meatball marinara",
+            "ingredients": ["meatballs", "bread", "cheese", "marinara"],
+            "description": "For a day you need a little more comfort food and a taste of home"
+        },
+        {
+            "name": "Au Jus",
+            "ingredients": ["roastbeef", "bread", "cheese", "mayo"],
+            "description": "For a day you need a little more comfort food and flavor"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Cake",
+            "ingredients": ["frosting", "cake mix"],
+            "description": "It might not be your birthday, but you deserve it."
+        },
+        {
+            "name": "Apple Pie",
+            "ingredients": ["crust", "apples", "sugar", "caramel"],
+            "description": "Our special dessert to satisfy your sweet tooth without feeling too guilty."
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Dr. Pepper",
+            "ingredients": ["Sugar", "26 Flavors"],
+            "description": "Because we all should see a doctor regularly."
+        },
+        {
+            "name": "Coke",
+            "ingredients": ["Sugar", "Secret Formula"],
+            "description": "Because drugs made us all addicted, whether we admit it or not"
+        }
+    ]
+}

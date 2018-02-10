@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body > div {
+    margin: 50px;
+}
+
+div div {
+    border-radius: 5px;
+}
+
+.three-rows, .nested-divs, .green-and-purple, .auto-fit {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.three-rows {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+        "r0 r0 b0 b0"
+        "g0 p0 p0 p0"
+        "y0 y0 y0 y0";
+}
+
+.three-rows .red {
+    grid-area: r0;
+}
+
+.three-rows .blue {
+    grid-area: b0;
+}
+
+.three-rows .green {
+    grid-area: g0;
+}
+
+.three-rows .purple {
+    grid-area: p0;
+}
+
+.three-rows .yellow {
+    grid-area: y0;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple, .purple1, .purple2 {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.nested-divs {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-template-areas:
+        "r1 r1 r1 r1"
+        "b1 b1 rb rb";
+}
+
+.nested-divs .red {
+    grid-area: r1;
+}
+
+.nested-divs .blue {
+    grid-area: b1;
+}
+
+.nested-divs > .green-and-purple > .green {
+    grid-area: g1;
+}
+
+.nested-divs > .green-and-purple > .purple1 {
+    grid-area: p11;
+}
+
+.nested-divs > .green-and-purple > .purple2 {
+    grid-area: p12;
+}
+
+.nested-divs > .green-and-purple {
+    grid-area: rb;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "g1 g1"
+        "p11 p12";
+}
+
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(6, minmax(0px, 100px));
+}

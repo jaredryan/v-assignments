@@ -1,0 +1,123 @@
+* {
+	font-size: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+}
+
+nav {
+	position: relative;
+	margin: 0px;
+	background-color: white;
+	height: 131px;
+	width: 100%;
+}
+
+nav > ul {
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 14px;
+	display: inline-block;
+	width: 550px;
+	vertical-align: top;
+	margin-top: 27px;
+	text-align: center;
+}
+
+nav > ul > li {
+	font-size: 14px;
+	list-style: none;
+	display: inline-block;
+	width: 24%;
+}
+
+nav > img {
+	margin-top: 15px;
+	margin-left: 25px;
+	display: inline;
+}
+
+form > input {
+	font-size: 10px;
+}
+
+.searchForm {
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	border-radius: 0px;
+	height: 30px;
+	width: 14%;
+}
+
+.slideshow {
+	background-size: cover;
+}
+
+.slideshow img {
+	width: 100%;
+	background-color: red;
+	max-height: 850px;
+}
+
+input {
+	-webkit-appearance: none;
+}
+
+.searchForm img {
+    position: absolute;
+    right: 8px;
+    top: 7.5px;
+	height: 15px;
+	width: 15px;
+}
+
+.search {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	border-radius: 0px;
+	height: 30px;
+	margin: 0px;
+	padding: 8px;
+	vertical-align: middle;
+	border: 1px solid silver;
+	padding-right: 20px;
+}
+
+.search::placeholder {
+	font-style: italic;
+}
+
+@media only screen and (min-width: 1270px) {
+	.slideshow {
+		background: url("http://kandjdiaries.com/wp-content/uploads/2016/06/slider-pic3.jpg");
+		background-size: cover;
+		height: 850px;
+	}
+
+	.slideshow img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.searchForm {
+		display: none;
+	}
+
+	nav > ul {
+		left: 60%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media only screen and (max-width: 774px) {
+	nav > ul {
+		display: none;
+	}
+}
