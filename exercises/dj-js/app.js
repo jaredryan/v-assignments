@@ -1,26 +1,26 @@
 var box = document.getElementById("box");
 
-box.addEventListener("mouseover", function() {
+box.addEventListener("mouseover", () => {
 	box.style.backgroundColor = "blue";
 });
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", () => {
 	box.style.backgroundColor = "orange";
 });
 
-box.addEventListener("mousedown", function() {
+box.addEventListener("mousedown", () => {
 	box.style.backgroundColor = "red";
 });
 
-box.addEventListener("mouseup", function() {
+box.addEventListener("mouseup", () => { {
 	box.style.backgroundColor = "yellow";
 });
 
-box.addEventListener("dblclick", function() {
+box.addEventListener("dblclick", () => { {
 	box.style.backgroundColor = "green";
 });
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", event => {
 	switch(event.keyCode) {
 		case 66:
 			box.style.backgroundColor = "blue"

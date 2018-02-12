@@ -1,0 +1,56 @@
+* {
+    font-size: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    background-color: silver;
+}
+
+body {
+    display: grid;
+    grid-gap: 5px;
+}
+
+@media only screen and (min-width: 500px) {
+    .header {
+        grid-area: h;
+    }
+
+    .sidebar-1 {
+        grid-area: s1;
+    }
+
+    .content {
+        grid-area: c;
+    }
+
+    .sidebar-2 {
+        grid-area: s2;
+    }
+
+    .footer {
+        grid-area: f;
+    }
+
+    body {
+        grid-template-areas:
+        "h h h h"
+        "s1 c c c"
+        "s2 s2 s2 s2"
+        "f f f f";
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        grid-template-areas:
+        "h h h h"
+        "s1 c c s2"
+        "s1 c c s2"
+        "f f f f";
+    }
+}
