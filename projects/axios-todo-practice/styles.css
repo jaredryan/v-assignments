@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: 0px 40px;
+    padding: 0px;
+}
+
+li {
+    width: 100%;
+    display: block;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.buttons, .newItemSection {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.newItemSection {
+    display: none;
+}
+
+.todo {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+button {
+    font-size: 18px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: grey;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid silver;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 28px;
+    font-size: 20px;
+}
+
+.submit {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid grey;
+    cursor: pointer;
+}
