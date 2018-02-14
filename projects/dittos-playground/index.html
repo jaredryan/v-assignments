@@ -3,7 +3,6 @@
 <head>
 	<title>K & J Diaries</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<style type="text/css">@font-face{font-family:bebas-neue;src:url(https://use.typekit.net/af/e061b9/0000000000000000000149c5/21/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/e061b9/0000000000000000000149c5/21/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/e061b9/0000000000000000000149c5/21/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
 	<link rel="shortcut icon" href="http://kandjdiaries.com/wp-content/themes/k_and_j/favicon.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,7 +18,7 @@
 			</ul>
 			<form name="searchBar" class="searchForm">
 				<input type="search" name="search" placeholder="Search" class="search"/>
-				<img src="search.png"/>
+				<img src="images/search.png"/>
 			</form>
 		</nav>
 		<div class="slideshow">
@@ -35,14 +34,104 @@
 				<i class="fa fa-envelope-o"></i>
 			</form>
 		</footer>
-
-
 	</header>
 	<main>
+		<!--
+		Starts as three columns, where two left columns are used for the blog entries, the right third is used for adds.
+		When it gets two small, the adds slide under the blog entries
+		 -->
+		<section class="blogEntries">
+			<article>
 
+			</article>
+			<article>
+
+			</article>
+		</section>
+		<aside class="sidebar">
+			<fieldset class="follow">
+				<legend>Follow</legend>
+					<i class="fa fa-facebook-f" style="font-size:14px;"></i>
+					<i class="fa fa-instagram" style="font-size:14px;"></i>
+					<i class="fa fa-twitter" style="font-size:14px;"></i>
+					<i class="fa fa-pinterest" style="font-size:14px;"></i>
+			</fieldset>
+			<fieldset class="subscribe">
+				<legend>Subscribe</legend>
+					<h4>Be the first to know...</h4>
+					<form name="signup">
+						<input type="text" name="email" placeholder="EMAIL ADDRESS"/>
+						<i class="fa fa-envelope-o"></i>
+					</form>
+			</fieldset>
+			<fieldset class="wishlist">
+				<legend>Wishlist</legend>
+				<img src="images/wishlist-1.jpeg" alt="IPhone">
+			</fieldset>
+			<fieldset class="favorites">
+				<legend>Favorites</legend>
+				<a target="_blank" href="http://bit.ly/1udKtOb"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/nordstrom-logo.jpeg"></a>
+				<br/>
+				<a target="_blank" href="http://bit.ly/1d2oRYs"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/gap-logo.jpg"></a>
+				<br/>
+				<a target="_blank" href="http://bit.ly/1udKCRC"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/kate-spade-logo.png"></a>
+				<br/>
+				<a target="_blank" href="http://bit.ly/1ymlVVI"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/j.crew-logo.jpg"></a>
+				<br/>
+				<a target="_blank" href="http://bit.ly/1v8Wb9L"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/asos-logo.jpg"></a>
+				<br/>
+				<a target="_blank" href="http://bit.ly/1ymm8Ip"><img src="http://kandjdiaries.com/wp-content/uploads/2014/09/sephora-logo.jpg"></a>
+			</fieldset>
+			<!-- Archives -->
+			<div class="archives-div">
+				<select name="archives" id="archives" placeholder="Archives">
+					<option value="" disabled selected>Archives</option>
+					<option value="feb18">February 2018</option>
+					<option value="jan18">January 2018</option>
+					<option value="dec17">December 2017</option>
+					<option value="nov17">November 2017</option>
+					<option value="oct17">October 2017</option>
+					<option value="sep17">September 2017</option>
+					<option value="aug17">August 2017</option>
+					<option value="jul17">July 2017</option>
+				</select>
+				<i class="fa fa-sort-down" style="font-size:14px;"></i>
+			</div>
+
+		</aside>
 	</main>
 	<footer>
+		<h3>K&J Instagram</h3>
+		<a href="">
+			<img src="https://scontent.cdninstagram.com/vp/3fee3265d610b55f9931eacec8e34b41/5B0B46F4/t51.2885-19/s150x150/20213801_1965957857018175_2109941420470042624_a.jpg">
+			<h4>@kandjdiaries</h4>
+			<p>International blooger | Photographer | Creative Director</p>
 
+		</a>
+		<row>
+			<div class="img1"></div>
+			<div class="img2"></div>
+			<div class="img3"></div>
+			<div class="img4"></div>
+			<div class="img5"></div>
+			<div class="img6"></div>
+			<div class="img7"></div>
+			<div class="img8"></div>
+			<div class="img9"></div>
+			<div class="img10"></div>
+		</row>
+		<row>
+			<div class="img11"></div>
+			<div class="img12"></div>
+			<div class="img13"></div>
+			<div class="img14"></div>
+			<div class="img15"></div>
+			<div class="img16"></div>
+			<div class="img17"></div>
+			<div class="img18"></div>
+			<div class="img19"></div>
+			<div class="img20"></div>
+		</row>
 	</footer>
 	<script type="text/javascript" src="app.js"></script>
 </body>

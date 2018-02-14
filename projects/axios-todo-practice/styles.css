@@ -10,18 +10,17 @@ h1 {
     text-align: center;
 }
 
-ul {
+ol {
     margin: 0px 40px;
     padding: 0px;
 }
 
 li {
-    width: 100%;
+    /* width: 100%; */
     display: block;
-    margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .buttons, .newItemSection {
@@ -34,12 +33,23 @@ li {
     display: none;
 }
 
-.todo {
+/* .remove {
     display: block;
     margin: auto;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+} */
+
+/* .buttons3 {
+    margin: auto;
+    text-align: center;
+} */
+
+.checkBox {
+    display: block;
+    text-align: center;
+    width: 18px;
 }
 
 button {
@@ -49,28 +59,57 @@ button {
     margin-top: 50px;
     margin-bottom: 50px;
     color: grey;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: rgb(240, 240, 240);
     border: 1px solid silver;
 }
 
+.buttons2 > button, .buttons3 > button {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.buttons3 {
+    border: none;
+    font-size: 0px;
+}
+
 label {
+    font-size: 20px;
+}
+
+h3 {
     font-size: 25px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h4, h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 input {
-    display: block;
     width: 300px;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 28px;
     font-size: 20px;
 }
 
-.submit {
-    display: block;
-    margin: auto;
-    margin-top: 20px;
+input, textarea {
+    border: 1px solid silver;
+    font-size: 20px;
 }
 
 button:hover {
@@ -78,4 +117,22 @@ button:hover {
     color: black;
     border: 1px solid grey;
     cursor: pointer;
+}
+
+ol img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+ol li p, .editInfo {
+    display: none;
+}
+
+
+
+.checked {
+    text-decoration: line-through;
 }

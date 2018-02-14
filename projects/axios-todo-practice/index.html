@@ -9,19 +9,30 @@
 </head>
 <body>
     <h1>List of Todos</h1>
-    <ul id="todos" class="todos">
+    <ol id="todos" class="todos">
 
-    </ul>
+    </ol>
     <div class="buttons">
         <button id="add" class="add">Add Item</button>
         <button id="clear" class="clear">Clear</button>
     </div>
     <div class="newItemSection" id="newItemSection">
+        <h3>Enter Item Information</h3>
         <form name="info">
-            <label>List Item: <input type="text" name="item"/></label>
-            <button id="submit" class="submit">Add Item</button>
+            <label>Item: <input type="text" name="item"/></label>
+            <br/>
+            <label>Price: <input type="number" name="price"/></label>
+            <br/>
+            <label>Description: <textarea name="description" rows="2" cols="35"/></textarea></label>
+            <br/>
+            <label>Image URL: <input type="text" name="url"/></label>
+            <div class="buttons2">
+                <button id="submit" class="submit" type="submit">Add Item</button>
+                <button id="undo" class="undo" type="button">Undo</button>
+            </div>
         </form>
     </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

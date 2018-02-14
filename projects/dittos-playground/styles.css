@@ -1,3 +1,28 @@
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('bebas/BebasNeue\ Bold.otf')
+}
+
+@font-face {
+	font-family: 'Bebas Neue Book';
+	src: url('bebas/BebasNeue\ Book.otf')
+}
+
+@font-face {
+	font-family: 'Bebas Neue Light';
+	src: url('bebas/BebasNeue\ Light.otf')
+}
+
+@font-face {
+	font-family: 'Bebas Neue Regular';
+	src: url('bebas/BebasNeue\ Regular.otf')
+}
+
+@font-face {
+	font-family: 'Bebas Neue Thin';
+	src: url('bebas/BebasNeue\ Thin.otf')
+}
+
 * {
 	font-size: 0px;
 	box-sizing: border-box;
@@ -115,7 +140,23 @@ header > footer > form {
 	font-size: 17px;
 }
 
-header > footer input {
+fieldset form {
+	width: 90%;
+	height: 20px;
+	padding: 3px 5px;
+	position: absolute;
+	bottom: 15px;
+	margin-left: 5%;
+	border: none;
+	background-color: white;
+	font-size: 17px;
+}
+
+.subscribe {
+	height: 115px;
+}
+
+header > footer input, fieldset input {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -124,6 +165,10 @@ header > footer input {
 	height: 100%;
 	padding: 3px 5px;
 	border: none;
+}
+
+.subscribe {
+	position: relative;
 }
 
 .fa-envelope-o {
@@ -138,6 +183,250 @@ header > footer input {
 	color: orange;
 	cursor: pointer;
 }
+
+.archives-div {
+	position: relative;
+}
+
+.fa-sort-down {
+	position: absolute;
+	right: 10px;
+	bottom: 11px;
+	font-size: 14px;
+	color: grey;
+}
+
+.fa-sort-down:hover {
+	cursor: pointer;
+}
+
+.blogEntries {
+	background-color: blue;
+}
+
+.sidebar {
+
+}
+
+main {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 70px;
+}
+
+legend, footer h3 {
+	text-align: center;
+	font-family: 'Bebas Neue Light';
+	font-size: 24px;
+}
+
+fieldset h4 {
+	text-align: center;
+}
+
+fieldset {
+	margin-bottom: 40px;
+	border: 1px solid silver;
+}
+
+.wishlist {
+	height: 480px;
+}
+
+.follow {
+	text-align: center;
+	height: 78px;
+}
+
+.favorites img {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+.favorites {
+	padding-bottom: 15px;
+}
+
+.wishlist > img {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: 70%;
+	margin-top: 30px;
+}
+
+.follow i {
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-top: 19px;
+	margin-bottom: 15px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+aside {
+	margin-top: 20px;
+}
+
+select {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 35px;
+	font-size: 14px;
+	font-style: italic;
+	color: grey;
+	border: 1px solid silver;
+	border-radius: 0px;
+	padding-left: 8px;
+}
+
+body > footer {
+	margin-top: 60px;
+	position: relative;
+}
+
+footer > row {
+	height: 60px;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+footer > row > img {
+	width: 10%;
+	max-height: 130px;
+}
+
+footer > row > div {
+  width:10%;
+  height:130px;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  display: inline-block;
+}
+
+body > footer img {
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+body > footer h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	padding-top: 8px;
+}
+
+body > footer p {
+	font-size: 13px;
+	margin-top: 2px;
+}
+
+body > footer a {
+	font-style: italic;
+	margin-left: 60px;
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-family: sans-serif;
+}
+
+body > footer a:hover {
+	color: orange;
+}
+
+.img1 {
+	background-image:url('https://scontent.cdninstagram.com/vp/f216ced5b6b8c1575eecd7c019cbd760/5B1FD32E/t51.2885-15/e35/p320x320/26871125_2109627392604058_999739546079854592_n.jpg');
+}
+
+.img2 {
+	background-image:url('https://scontent.cdninstagram.com/vp/9f183e8c970aaa576d0923563b484434/5B2329CF/t51.2885-15/e35/p320x320/27575673_376835709446082_3982622009921110016_n.jpg');
+}
+
+.img3 {
+	background-image:url('https://scontent.cdninstagram.com/vp/0906fdf12cd28d5bb89e85ee66782217/5B1DAECD/t51.2885-15/e35/p320x320/27575485_2100374946853154_3040265602032730112_n.jpg');
+}
+
+.img4 {
+	background-image:url('https://scontent.cdninstagram.com/vp/2f103b5daed031fa78ef68ac531ddc84/5B236E53/t51.2885-15/e35/p320x320/26871611_214115219135873_3420056825439977472_n.jpg');
+}
+
+.img5 {
+	background-image:url('https://scontent.cdninstagram.com/vp/5396e449c10add02a02d5e64c71ad84b/5B05B185/t51.2885-15/e35/p320x320/26868710_1543146302467906_7813290967422730240_n.jpg');
+}
+
+.img6 {
+	background-image:url('https://scontent.cdninstagram.com/vp/6a3813f0508aa5bac50fd96859424e4d/5B258A1E/t51.2885-15/s320x320/e35/26865851_176750173098568_7219080034407940096_n.jpg');
+}
+
+.img7 {
+	background-image:url('https://scontent.cdninstagram.com/vp/ac1628fc2bb4b2435442eeabbf798d66/5B1132D5/t51.2885-15/e35/p320x320/26356310_539057003130818_1987096194639200256_n.jpg');
+}
+
+.img8 {
+	background-image:url('https://scontent.cdninstagram.com/vp/2048dca61d454359756993c7a3ea0f43/5B05B763/t51.2885-15/e35/p320x320/26864667_2080717982208079_1960326376447803392_n.jpg');
+}
+
+.img9 {
+	background-image:url('https://scontent.cdninstagram.com/vp/db758aa88d693808f785ed4c9e0d1dae/5B0900F4/t51.2885-15/e35/p320x320/26183715_343587616124071_8065044508452061184_n.jpg');
+}
+
+.img10 {
+	background-image:url('https://scontent.cdninstagram.com/vp/5de59d84d2e72d0952e6b4bc4c0e0d1a/5B091471/t51.2885-15/s320x320/e35/26376107_162041731090936_7756710850676654080_n.jpg');
+}
+
+.img11 {
+	background-image:url('https://scontent.cdninstagram.com/vp/1695e8f7c0ff24ecba06528da75286fc/5B100827/t51.2885-15/e35/p320x320/26274388_961414590706818_4836239686189973504_n.jpg');
+}
+
+.img12 {
+	background-image:url('https://scontent.cdninstagram.com/vp/b911820e057d00e6f37b5f94480394de/5B162567/t51.2885-15/e35/p320x320/26373386_769590906568512_4977734450294030336_n.jpg');
+}
+
+.img13 {
+	background-image:url('https://scontent.cdninstagram.com/vp/cb032b792fca79a2b0460262d892b26e/5B004C48/t51.2885-15/e35/p320x320/26184908_2004855619788324_6628191962971242496_n.jpg');
+}
+
+.img14 {
+	background-image:url('https://scontent.cdninstagram.com/vp/cad3b43df2c90ef73fca7b3184dd421e/5B1FEE1A/t51.2885-15/e35/p320x320/26158015_123740455099372_2864532758804299776_n.jpg');
+}
+
+.img15 {
+	background-image:url('https://scontent.cdninstagram.com/vp/f33f3e6f7de55ccf4994bc0432f5cb97/5B201C6E/t51.2885-15/e35/p320x320/26324943_1804134206287656_2192100146227970048_n.jpg');
+}
+
+.img16 {
+	background-image:url('https://scontent.cdninstagram.com/vp/1bf8e7b942fcb167718fc45cf4bd5f0c/5B20B8FB/t51.2885-15/e35/p320x320/26072389_373371236408271_7727638857000157184_n.jpg');
+}
+
+.img17 {
+	background-image:url('https://scontent.cdninstagram.com/vp/53d0eb786092281e7c8e6ba899edba0b/5B0B60FA/t51.2885-15/e35/p320x320/26072062_518639358519939_5746114227081314304_n.jpg');
+}
+
+.img18 {
+	background-image:url('https://scontent.cdninstagram.com/vp/737fb252954986d19ed2da335acf8236/5B0F4DF5/t51.2885-15/e35/p320x320/25036991_141601913187780_5188200097044758528_n.jpg');
+}
+
+.img19 {
+	background-image:url('https://scontent.cdninstagram.com/vp/939ebed49ee964ba7528fbad5dbcaf55/5B043248/t51.2885-15/e35/p320x320/25037357_1520176738099433_5678688115321995264_n.jpg');
+}
+
+.img20 {
+	background-image:url('https://scontent.cdninstagram.com/vp/5a47bc1c553332c8b959edcb798b3f0c/5B02E18A/t51.2885-15/e35/p320x320/26158167_331350197343948_4803888111320825856_n.jpg');
+}1
+
+
 
 @media only screen and (min-width: 1270px) {
 	.slideshow {
@@ -170,6 +459,4 @@ header > footer input {
 	header > footer > form {
 		width: 90%;
 	}
-
-
 }
