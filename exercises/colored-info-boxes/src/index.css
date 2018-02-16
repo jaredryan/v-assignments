@@ -1,0 +1,24 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.box div {
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    margin: auto;
+}

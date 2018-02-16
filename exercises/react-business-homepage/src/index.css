@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(160, 160, 160);
+}
+
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+
+nav h1 {
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+    padding: 5px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    margin-top: 0px;
+}
+
+nav h1:hover {
+    color: black;
+    background-color: white;
+}
+
+nav ul {
+    margin-left: 4%;
+    height: 100%;
+    text-align: right;
+    display: inline-block;
+    margin-top: 0px;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    padding-top: 0px;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    list-style: none;
+    margin-left: 10px;
+    color: white;
+    padding: 5px;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+    margin-top: 0px;
+}
+
+nav li:hover {
+    color: black;
+    background-color: white;
+}
+
+.images div {
+    width: 33.33%;
+    display: inline-block;
+}
+
+#image1, #image2, #image3 {
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    background-repeat:no-repeat;
+}
+
+#image1 {
+    background-image: url("https://i.imgur.com/Qx3Rg38.jpg");
+}
+
+#image2 {
+    background-image: url("http://globalmedicalco.com/photos/globalmedicalco/2/7240.jpg");
+}
+
+#image3 {
+    background-image: url("http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-full-hd-1920-1080-widescreen-awesome/wallpaper-full-hd-1920-1080-widescreen-awesome-464.jpg");
+}
+
+.info, .list {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    margin-top: 0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.info div {
+    background-color: grey;
+}
+
+.info h2 {
+    font-size: 50px;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.info h4 {
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.info p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.list h3 {
+    background-color: grey;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.list ul {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 33.33%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.list li a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.list li:hover {
+    cursor: pointer;
+}
+
+#image4, #image5, #image6 {
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-repeat:no-repeat;
+}
+
+#image4 {
+    background-image: url("https://i.ytimg.com/vi/gKKYnNvfU1A/maxresdefault.jpg");
+}
+
+#image5 {
+    background-image: url("https://cdn.drawception.com/images/panels/2014/9-22/as9cgLg3tA-4.png");
+}
+
+#image6 {
+    background-image: url("https://vignette.wikia.nocookie.net/kungfupanda/images/b/b3/Po-bunnies-SotFF.jpg/revision/latest?cb=20100819210610");
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding-top: 15px;
+    margin-bottom: 0px;
+}
+
+footer h4, footer h5, footer div {
+    width: 29.33%;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer h5 {
+    text-align: right;
+    font-size: 12px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+footer a {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    #image1, #image2, #image3 {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .info h2 {
+        font-size: 36px;
+    }
+}
+
+/* @media only screen and (max-width: 440px) {
+    nav {
+        height: 50px;
+    }
+
+    nav h1 {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 7.5px;
+        padding: 5px;
+    }
+
+    nav li {
+        font-size: 20px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+} */
