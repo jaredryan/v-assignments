@@ -1,0 +1,15 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ol {
+    text-align: left;
+}
+
+.listWrapper {
+    margin: auto;
+    width: 300px;
+}
