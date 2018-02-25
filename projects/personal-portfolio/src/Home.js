@@ -7,17 +7,14 @@ class Home extends Component {
           {
               name: "Projects",
               description: "Check out a comprehensive list of my projects.",
-              imgURL: "http://www.pvhc.net/img120/lwpvchrtpsutfainpdfe.png",
               path: "/projects"
           },{
               name: "About",
               description: "Click here to learn more about what I'm like.",
-              imgURL: "https://www.fstoessel.com/wp-content/uploads/2015/03/aboutmeicon.jpg",
               path: "/about"
           },{
               name: "Resume",
               description: "See my qualifications in a simple or fun format.",
-              imgURL: "https://cdn1.iconfinder.com/data/icons/business-and-finance-flat-3/128/112-512.png",
               path: "/resume"
           }
       ];

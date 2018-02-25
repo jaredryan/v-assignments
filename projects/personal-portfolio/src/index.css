@@ -52,20 +52,18 @@ nav a:hover {
     text-shadow: none;
 }
 
-header {
-    position: relative;
-}
-
 .homepageImg {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://wallpapertag.com/wallpaper/full/e/5/7/449724-cool-nature-backgrounds-1920x1080-for-mobile.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Images/homepageImg.jpg") no-repeat center center;
     filter: blur(8px);
     z-index: 0;
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: absolute;
 }
 
 header {
+    position: relative;
     height: 600px;
     justify-content: center;
     align-items: center;
@@ -236,7 +234,7 @@ footer ul li span {
     width: 200px;
     zoom: 60%;
     border: 1.6666667px solid black;
-    /* margin-top: 100px; */
+    background-image: url("Images/homepageProjects.png")
 }
 
 #Projects:hover * {
@@ -248,6 +246,7 @@ footer ul li span {
     width: 860px;
     zoom: 13.95349%;
     border: 7.1666658px solid black;
+    background-image: url("Images/aboutMeIcon.jpg")
 }
 
 #About:hover * {
@@ -259,6 +258,7 @@ footer ul li span {
     width: 512px;
     zoom: 23.4375%;
     border: 4.26666667px solid black;
+    background-image: url("Images/resumeHomeIcon.png")
 }
 
 #Resume:hover * {
@@ -316,7 +316,7 @@ footer ul li span {
 
 .hoverWrapper:hover a {
     transition-duration: 300ms;
-    color: rgb(0, 100, 150);
+    color: rgb(0, 150, 200);
 }
 
 .hoverWrapper:hover a.img2 {
@@ -328,7 +328,7 @@ footer ul li span {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: url("https://cdn6.aptoide.com/imgs/9/7/2/9725ddd21ba6ac4a6b9d527745d4c12c_icon.png?w=240") no-repeat center center;
+    background: url("Images/simpleResumeIcon.png") no-repeat center center;
     border: 1px solid black;
 }
 
@@ -336,7 +336,7 @@ footer ul li span {
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    background: url("http://hendersony.com/wp-content/uploads/2015/11/icon-comission.png") no-repeat center center;
+    background: url("Images/funResumeIcon.png") no-repeat center center;
     zoom: 128%;
     border: 0.78125px solid black;
 }
@@ -344,6 +344,7 @@ footer ul li span {
 .resumePage button {
     width: 230px;
     font-size: 22px;
+    font-weight: 600;
     height: 50px;
     border-radius: 15px;
     border: 1px solid black;
@@ -412,7 +413,7 @@ footer ul li span {
 
 .introAndContact {
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: -20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -491,7 +492,7 @@ footer ul li span {
     margin-top: 10px;
 }
 
-.aboutPage {
+.aboutPage, .projectsPage {
     margin: 0;
     padding: 20px 0;
     padding-bottom: 0px;
@@ -540,4 +541,79 @@ footer ul li span {
 
 .seeMore {
     grid: s
+}
+
+.aboutPageImg {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Images/aboutMeBackground.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(6px);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.aboutBanner {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 500px;
+    margin-top: -40px;
+    display: flex;
+    background-color: black;
+    bottom: 20px;
+    margin-bottom: -30px;
+}
+
+.aboutBanner h1 {
+    z-index: 1;
+    font-size: 100px;
+    margin: 0px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+
+.projectPageImg {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/projectsBackgroundImg.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(6px);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.projectBanner {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 450px;
+    margin-top: -40px;
+    display: flex;
+    background-color: transparent;
+    bottom: 20px;
+    margin-bottom: -20px;
+    background-color: black;
+}
+
+.projectBanner h1 {
+    z-index: 1;
+    font-size: 100px;
+    margin: 0px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+
+.projectsDiv {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-top: 20px;
 }
