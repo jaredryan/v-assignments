@@ -1,5 +1,74 @@
+* {
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background-color: silver;
+}
+
+nav {
+    background-color: rgb(70, 70, 70);
+    height: 80px;
+    margin-top: 0;
+    display: flex;
+    position: relative;
+}
+
+nav > div {
+    background: url("http://knowledgenuts.com/wp-content/uploads/2014/02/godfather-438x205.png"), no-repeat center center;
+    height: 205px;
+    width: 438px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    zoom: 39%;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    margin-top: 0;
+    top: 22px;
+    position: absolute;
+    left: 200px;
+    font-size: 30px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.target {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin: auto;
+}
+
+.target > div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 330px;
+}
+
+.target h3 {
+    background-color: rgb(0, 50, 200);
+    width: 100%;
+    /* margin-top: 0; */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    color: white;
 }

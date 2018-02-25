@@ -1,18 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import Target from './Target';
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            targets: []
+        }
+    }
+    
+  componentDidMount() {
+      axios.get("http://api.vschool.io:6543/hitlist.json").then(response => {
+          this.setState({targets: response.data});
+      });
+  }
+  
   render() {
+     const theList = this.state.targets.map((elem, i) => {
+          return <Target 
+              name={elem.name} 
+              image={elem.image} 
+              key={i + elem.name}
+          />
+    });
+      
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <nav>
+            <div></div>
+            <h1>Don Carleone's Hit List</h1>
+        </nav>
+        
+        <ul>
+            {theList}
+        </ul>
       </div>
     );
   }
