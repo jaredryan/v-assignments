@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Item from './Item';
+import CompletedItem from './CompletedItem'
 
-class ItemsList extends Component {
-
-    const itemsList = this.props.items.map(item => {
-        <Item name=item.name />
+const ItemsList = props => {    
+    const itemsList = props.items.map(item => {
+        return <Item 
+                    item={item} 
+                    handleDelete={props.handleDelete}
+                    handleMoveToTop={props.handleMoveToTop}
+                    handleCompleted={props.handleCompleted}
+                />
+    });
+    
+    const completedList = props.completed.map(item => {
+        return <CompletedItem item={item} />
     });
 
-  render() {
     return (
       <div className="itemsList">
+        <h2>Todo List:</h2>
         {itemsList}
+        <button onClick={props.handleClear}>Clear</button>
+        <h2>Completed List:</h2>
+        {completedList}
+        <button onClick={props.handleCompletedClear}>Clear</button>
       </div>
     );
-  }
 }
 
 export default ItemsList;

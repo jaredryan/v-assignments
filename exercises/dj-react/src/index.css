@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.buttons {
+    margin-bottom: 50px;
+}
+
+.buttons button {
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.buttons button:hover {
+    background-color: silver;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+       ". tl tr ."
+       ". bl br .";
+    margin: 50px auto;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+#topLeft {
+    grid-area: tl;
+}
+
+#topRight {
+    grid-area: tr;
+}
+
+#bottomLeft {
+    grid-area: bl;
+}
+
+#bottomRight {
+    grid-area: br;
+}

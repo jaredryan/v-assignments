@@ -3,24 +3,14 @@ import { Switch, Route } from 'react-router-dom';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Home from './Home'
+import Home from './Home';
+import About from './About';
+import Projects from './Projects';
+import Resume from './Resume';
+import FunResume from './FunResume';
 
 class App extends Component {
-  render() {
-      // const projects = [
-      //     {
-      //         name: "Fishackathon",
-      //         description: "",
-      //         images: []
-      //     },
-      //     {
-      //         name: "OpenHouse",
-      //         description: "",
-      //         images: []
-      //     },
-      // ];
-      
-
+  render() {      
     // General Organizations
       // My Projects
       // About Me
@@ -28,17 +18,15 @@ class App extends Component {
       // Links to LinkedIn and Github
       // Contact Info (Phone/Email)
       
-      
-      // <Route path="/projects" component={Projects}/>
-      // <Route path="/about" component={About}/>
-      // <Route path="/resume" component={Resume}/>
-      
     return (
         <div>
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home}/>
-                
+                <Route path="/about" component={About}/>
+                <Route path="/projects" component={Projects}/>
+                <Route path="/resume" component={Resume}/>
+                <Route path="/fun/resume" component={FunResume}/>
             </Switch>
             <Footer />
         </div>

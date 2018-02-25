@@ -99,10 +99,11 @@ header h2 {
 }
 
 footer {
-    height: 85px;
+    height: 105px;
     background-color: black;
     color: white;
     position: relative;
+    padding-top: 1px;
 }
 
 footer legend {
@@ -150,7 +151,7 @@ footer a {
 .info {
     position: absolute;
     left: 10px;
-    top: 15px;
+    top: 35px;
 }
 
 footer ul li span {
@@ -163,7 +164,7 @@ footer ul li span {
 .links {
     position: absolute;
     right: 10px;
-    top: 15px;
+    top: 35px;
     text-align: right;
 }
 
@@ -262,4 +263,281 @@ footer ul li span {
 
 #Resume:hover * {
     color: rgb(250,50,0);
+}
+
+.aboutPage, .projectsPage, .funResume {
+    background-color: rgb(210, 210, 225);
+    color: black;
+    margin-top: 0;
+    padding: 20px 30px;
+}
+
+.resumePage {
+    background-color: rgb(210, 210, 225);
+    color: black;
+    margin-top: 0;
+    padding: 20px 30px;
+}
+
+.resumeChoices {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.resumeChoices a {
+    color: black;
+    text-decoration: none;
+}
+
+.hoverWrapper {
+    padding: 20px;
+}
+
+.hoverWrapper:hover {
+    background-color: white;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.hoverWrapper h1 {
+    margin-top: 0;
+}
+
+.simpleResume .imageWrapper {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.hoverWrapper:hover .imageWrapper {
+    transition-duration: 300ms;
+    background-color: grey;
+}
+
+.hoverWrapper:hover a {
+    transition-duration: 300ms;
+    color: rgb(0, 100, 150);
+}
+
+.hoverWrapper:hover a.img2 {
+    transition-duration: 300ms;
+    color: rgb(255, 60, 90);
+}
+
+.resumeImg1 {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: url("https://cdn6.aptoide.com/imgs/9/7/2/9725ddd21ba6ac4a6b9d527745d4c12c_icon.png?w=240") no-repeat center center;
+    border: 1px solid black;
+}
+
+.resumeImg2 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background: url("http://hendersony.com/wp-content/uploads/2015/11/icon-comission.png") no-repeat center center;
+    zoom: 128%;
+    border: 0.78125px solid black;
+}
+
+.resumePage button {
+    width: 230px;
+    font-size: 22px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 30px auto 20px;
+    display: block;
+}
+
+.resumePage > a {
+    text-decoration: none;
+    color: black;
+}
+
+.resumePage button:hover {
+    transition-duration: 100ms;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    border: 1px solid white;
+}
+
+.aboutPage .profilePic {
+    background: url("Images/profilePic.jpg") no-repeat center center;
+    height: 399px;
+    width: 239px;
+    zoom: 60%;
+}
+
+.aboutPage .gradPic {
+    background: url("Images/graduation.jpg") no-repeat center center;
+    height: 960px;
+    width: 641px;
+    zoom: 25%;
+}
+
+.aboutPage .naturePic {
+    background: url("Images/nature.jpg") no-repeat center center;
+    height: 720px;
+    width: 960px;
+    zoom: 45%;
+}
+
+.aboutPage .swedenPic {
+    background: url("Images/sweden.jpg") no-repeat center center;
+    height: 1357px;
+    width: 2048px;
+    zoom: 20%;
+}
+
+.aboutPage .valuesPic {
+    background: url("Images/gradFamily.jpg") no-repeat center center;
+    height: 640px;
+    width: 960px;
+    zoom: 50%;
+    vertical-align: middle;
+}
+
+.aboutPage h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.aboutPage .intro {
+    vertical-align: top;
+}
+
+.introAndContact {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gradPic, .softwareSection p {
+    margin: auto;
+}
+
+.seeMore span {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.seeMore p {
+    margin-top: 0;
+}
+
+.seeMore a {
+    color: black;
+}
+
+.aboutPage .myBackground, .aboutPage .myInterests,
+.aboutPage .myValues {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    vertical-align: top;
+    clear: both;
+}
+
+.aboutPage .myBackground,
+.aboutPage .myInterests,
+.aboutPage .myValues,
+.aboutPage .introAndContact {
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: auto;
+}
+
+.aboutPage .introAndContact {
+    border-top: 2px solid black;
+}
+
+.aboutPage .myInterests,
+.aboutPage .myValues {
+    background-color: rgb(210, 210, 225);
+}
+
+.aboutPage .myBackground > div, .aboutPage .myInterests > div,
+.aboutPage .myValues > div {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aboutPage .myValues,
+.aboutPage .myBackground,
+.aboutPage .myInterests {
+    display: flex;
+    align-items: center;
+}
+
+.myValues {
+    border-top: 1px solid black;
+}
+
+.aboutPage h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.aboutPage {
+    margin: 0;
+    padding: 20px 0;
+    padding-bottom: 0px;
+}
+
+.myBackground .naturePic {
+    display: inline-block;
+    float: right;
+}
+
+.myBackground .swedenPic,
+.myValues .valuesPic  {
+    display: inline-block;
+    float: left;
+}
+
+.contactMe, .softwareSection {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.whySoftware {
+    grid: s
+}
+
+.intro {
+    grid: i
+}
+
+.introAndContact {
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+    grid-template-areas:
+        "s i";
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    grid-gap: 30px;
+    padding-top: 30px;
+}
+
+.profilePic {
+    grid: p
+}
+
+.seeMore {
+    grid: s
 }

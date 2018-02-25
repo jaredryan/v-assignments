@@ -1,23 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ShoppingList from './ShoppingList';
-import Form from './Form';
-import ItemsList from './ItemsList';
 
-class App extends Component {
-    constructor() {
-        super();
-        this.state {
-            items: []
-        }
-    }
-    
-  render() {
+const App = () => {    
     return (
       <div>
-        <ShoppingList items=this.state.items/>
+        <h1>Shopping List</h1>
+        <ShoppingList />
       </div>
     );
-  }
 }
 
 export default App;

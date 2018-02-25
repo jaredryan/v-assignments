@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Item extends Component {
-  render() {
+const Item = props => {
     return (
       <div className="item">
-        <h4>{this.props.name}</h4>
-        <button>Delete</button>
-        <button>Completed</button>
-        <button>Move to Top</button>
+        <h4>{props.item}</h4>
+        <button onClick={e => props.handleDelete(e)}>Delete</button>
+        <button onClick={e => props.handleCompleted(e)}>Completed</button>
+        <button onClick={e => props.handleMoveToTop(e)}>Move to Top</button>
       </div>
     );
-  }
 }
 
 export default Item;

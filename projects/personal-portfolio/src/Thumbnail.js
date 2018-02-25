@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 
 class Thumbnail extends Component {
     render(){
@@ -9,11 +10,11 @@ class Thumbnail extends Component {
 
         return(
             <div className="thumbnail" id={this.props.id}>
-                <a href="">
+                <Link to={this.props.path}>
                     <div className="thumbnailImg"  style={backgroundImage}></div>
                     <h3>{this.props.name}</h3>
                     <h5>{this.props.description}</h5>
-                </a>
+                </Link>
             </div>
         );
     }
