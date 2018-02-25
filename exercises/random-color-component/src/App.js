@@ -1,19 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            color: ""
+        }
+        
+        this.newColor = this.newColor.bind(this);
+    }
+    
+    componentDidMount() {
+        axios.get("http://www.colr.org/json/color/random").then(response => {
+            this.setState({
+                backgroundColor: "#" + response.data.new_color
+            });
+        });
+    }
+    
+    newColor() {
+        console.log("bananas");
+        axios.get("http://www.colr.org/json/color/random").then(response => {
+            this.setState({
+                backgroundColor: "#" + response.data.new_color
+            });
+        });
+    }
+    
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <div>
+          <div className="App" style={this.state}></div>
+          <button onClick={this.newColor}>New Color!</button>
+        </div>
     );
   }
 }
