@@ -20,7 +20,6 @@ class App extends Component {
     }
     
     newColor() {
-        console.log("bananas");
         axios.get("http://www.colr.org/json/color/random").then(response => {
             this.setState({
                 backgroundColor: "#" + response.data.new_color
