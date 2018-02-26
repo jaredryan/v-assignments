@@ -10,14 +10,12 @@ import Resume from './Resume';
 import FunResume from './FunResume';
 
 class App extends Component {
-  render() {      
-    // General Organizations
-      // My Projects
-      // About Me
-      // Resume
-      // Links to LinkedIn and Github
-      // Contact Info (Phone/Email)
-      
+
+    componentDidUpdate() {
+        window.scrollTo(0,0);
+    }
+
+  render() {
     return (
         <div>
             <Navbar />

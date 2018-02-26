@@ -452,8 +452,6 @@ footer ul li span {
 .aboutPage .introAndContact {
     background-color: white;
     width: 100%;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
     height: auto;
 }
 
@@ -480,10 +478,6 @@ footer ul li span {
 .aboutPage .myInterests {
     display: flex;
     align-items: center;
-}
-
-.myValues {
-    border-top: 1px solid black;
 }
 
 .aboutPage h3 {
@@ -622,7 +616,131 @@ footer ul li span {
 }
 
 .projectsDiv {
-    padding-bottom: 20px;
     margin-bottom: 0;
-    padding-top: 20px;
+    padding: 0px;
+    background-color: pink;
+}
+
+.projectEntry {
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.projectEntry h2,
+.projectEntry h3 {
+    text-align: center;
+}
+
+.projectEntry h2 a {
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.projectEntry h2 a:hover span,
+.projectEntry h3 a:hover span {
+    text-decoration: underline;
+}
+
+.projectEntry h2 a {
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.projectEntry h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+.projectEntry h2 {
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.projectEntry h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.projectEntry h3 a,
+.projectEntry h2 a  {
+    margin-left: 4px;
+    padding: 3px 4px;
+}
+
+.projectEntry h5 {
+    padding-left: 20px;
+}
+
+.projectEntry h5,
+.projectEntry li {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.projectEntry h5 span {
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.projectEntry h6 {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.projectEntry:hover h2,
+.projectEntry:hover h3,
+.projectEntry:hover h2 a,
+.projectEntry:hover h3 a {
+    color: rgb(180, 110, 20);
+    transition-duration: 200ms;
+}
+
+.projectEntry:hover h6 {
+    font-weight: bold;
+    transition-duration: 100ms;
+}
+
+#fishackathon1 {
+    background-image: url("Images/fishackathonHome.png");
+}
+
+#fishackathon2 {
+    background-image: url("Images/fishackathonReport.png");
+}
+
+.projectImageContainer {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.projectImage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 900px;
+    zoom: 40%;
+}
+
+.projectImageContainer h5 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.projectImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
+    grid-gap: 15px;
 }
