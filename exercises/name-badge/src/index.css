@@ -31,6 +31,7 @@ form div {
 form .description {
     height: 100px;
     width: 636px;
+    border: 2px solid black;
 }
 
 form .description::placeholder {
