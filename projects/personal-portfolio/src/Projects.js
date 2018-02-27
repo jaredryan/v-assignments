@@ -17,7 +17,6 @@ class Projects extends Component {
                       id: "fishackathon1"
                   },
                   {
-                      url: "Images/fishackathonReport.png",
                       caption: "Report Page",
                       id: "fishackathon2"
                   }
@@ -37,8 +36,16 @@ class Projects extends Component {
               tech: ["Ruby on Rails", 'JavaScript', 'HTML', 'CSS'],
               pictures: [
                   {
-                      url: "",
-                      caption: ""
+                      caption: "Home Page",
+                      id: "openHouse1"
+                  },
+                  {
+                      caption: "Results Page",
+                      id: "openHouse2"
+                  },
+                  {
+                      caption: "Profile Page",
+                      id: "openHouse3"
                   }
               ]
           },{
@@ -50,8 +57,16 @@ class Projects extends Component {
               tech: ['JavaScript', 'HTML', 'CSS'],
               pictures: [
                   {
-                      url: "",
-                      caption: ""
+                      caption: "Home",
+                      id: "movieRecs1"
+                  },
+                  {
+                      caption: "Results",
+                      id: "movieRecs2"
+                  },
+                  {
+                      caption: "Wish List",
+                      id: "movieRecs3"
                   }
               ]
           }
