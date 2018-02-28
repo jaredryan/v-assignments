@@ -418,15 +418,8 @@ footer ul li span {
     vertical-align: top;
 }
 
-.introAndContact {
-    margin-bottom: 10px;
-    margin-top: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .gradPic, .softwareSection p {
-    margin: auto;
+
 }
 
 .seeMore span {
@@ -510,39 +503,46 @@ footer ul li span {
     float: left;
 }
 
-.contactMe, .softwareSection {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 2fr;
-}
-
-.whySoftware {
-    grid: s
-}
-
-.intro {
-    grid: i
-}
-
 .introAndContact {
-    display: grid;
-    grid-template-columns: 2fr  1fr;
-    grid-template-areas:
-        "s i";
-    padding-bottom: 30px;
+    display: flex;
+    padding: 30px 20px;
     margin-top: 10px;
     margin-bottom: 0;
-    grid-gap: 30px;
-    padding-top: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.profilePic {
-    grid: p
+.row1,
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row1 {
+    width: 60%;
+}
+
+.row2 {
+    width: 40%;
+}
+
+.softwareText {
+    width: 60%;
 }
 
 .seeMore {
-    grid: s
+    width: 260px;
+    margin-left: 20px;
 }
+
+.softwareText h3, .seeMore h3 {
+    margin-top: 0;
+}
+
+
+
+
 
 .aboutPageImg {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("Images/aboutMeBackground.jpg") no-repeat center center;
@@ -629,7 +629,7 @@ footer ul li span {
 }
 
 .projectEntry {
-    padding: 20px 10px;
+    padding: 20px 15px;
     margin: 0;
 }
 
@@ -780,9 +780,95 @@ footer ul li span {
     margin-right: 10px;
 }
 
+.aboutBanner br {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .gradPic,
+    .softwareText,
+    .profilePic,
+    .seeMore {
+        margin: auto;
+    }
+
+    .softwareText {
+        width: 70%;
+    }
+
+    .profilePic {
+        grid-area: p;
+        background-color: rgb(210, 210, 225);
+    }
+
+    .softwareText, .seeMore {
+        padding-left: 20px;
+    }
+
+    .seeMore {
+        grid-area: m;
+    }
+
+    .row1 {
+        grid-area: r1;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .row2 {
+        grid-area: r2;
+        width: 100%;
+        background-color: rgb(210, 210, 225);
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-areas:
+            ". p m .";
+        padding: 30px;
+    }
+
+    .introAndContact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "r2"
+            "r1";
+        padding: 0px 0px;
+    }
+
+    .softwareText {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1050px) {
+    .aboutPageImg, .aboutBanner {
+        height: 450px;
+    }
+
+    .aboutBanner br {
+        display: block;
+    }
+
+    .aboutBanner h1 {
+        font-size: 90px;
+    }
+
+}
+
 @media (max-width: 950px) {
     .homepageImg, header {
         height: 500px;
+    }
+
+    .projectBanner, .projectPageImg {
+        height: 375px;
+    }
+
+    .projectBanner h1 {
+        font-size: 90px;
     }
 }
 
@@ -797,6 +883,14 @@ footer ul li span {
 
     .homepageImg, header {
         height: 450px;
+    }
+
+    .aboutPageImg, .aboutBanner {
+        height: 400px;
+    }
+
+    .aboutBanner h1 {
+        font-size: 80px;
     }
 }
 
@@ -828,6 +922,88 @@ footer ul li span {
 
     .hoverWrapper h1 {
         font-size: 28px;
+    }
+
+    .projectBanner, .projectPageImg {
+        height: 330px;
+    }
+
+    .projectBanner h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 750px) {
+    .aboutPage .myValues,
+    .aboutPage .myInterests,
+    .aboutPage .myBackground {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+
+    .aboutPage h3 {
+        margin-top: 0;
+    }
+
+    .aboutPage .myValues > div,
+    .aboutPage .myInterests > div,
+    .aboutPage .myBackground > div {
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .valuesPic {
+        grid-area: vp;
+    }
+
+    .valuesText {
+        grid-area: vt;
+    }
+
+    .valuesPic {
+        grid-area: vp;
+    }
+
+    .valuesText {
+        grid-area: vt;
+    }
+
+    .naturePic {
+        grid-area: bp;
+    }
+
+    .backgroundText {
+        grid-area: bt;
+    }
+
+    .swedenPic {
+        grid-area: ip;
+    }
+
+    .interestsText {
+        grid-area: it;
+    }
+
+
+    .myValues {
+        grid-template-areas:
+            "vt"
+            "vp";
+    }
+
+    .myInterests {
+        grid-template-areas:
+            "it"
+            "ip";
+    }
+
+    .myBackground {
+        grid-template-areas:
+            "bt"
+            "bp";
     }
 }
 
@@ -868,6 +1044,32 @@ footer ul li span {
     .homepageImg, header {
         height: 350px;
     }
+
+    .aboutPageImg, .aboutBanner {
+        height: 350px;
+    }
+
+    .aboutBanner h1 {
+        font-size: 70px;
+    }
+
+    .projectBanner, .projectPageImg {
+        height: 300px;
+    }
+
+    .projectBanner h1 {
+        font-size: 70px;
+    }
+
+    .projectImage {
+        width: 100%;
+        margin-left: 0;
+        zoom: 35%;
+    }
+
+    .projectImageContainer {
+        width: 100%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -875,6 +1077,69 @@ footer ul li span {
         justify-content: space-between;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .row1,
+    .row2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aboutPage .row2 .profilePic {
+        zoom: 40%;
+    }
+
+    .seeMore {
+        font-size: 14px;
+        width: 210px;
+        padding: 0;
+    }
+
+    .softwareText {
+        grid-area: s;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .gradPic {
+        grid-area: g;
+    }
+
+    .row1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "s"
+            "g";
+        grid-gap: 30px;
+    }
+
+    .projectEntry ul {
+        padding-left: 20px;
+    }
+
+    .projectEntry h5 {
+        padding-left: 0px;
+    }
+
+    .projectImage {
+        zoom: 30%;
+    }
+}
+
+@media (max-width: 530px) {
+    .aboutPage .swedenPic {
+        zoom: 19%;
+    }
+
+    .aboutPage .myBackground .naturePic {
+        zoom: 40%;
+    }
+
+    .aboutPage .valuesPic {
+        zoom: 40%;
     }
 }
 
@@ -898,10 +1163,30 @@ footer ul li span {
     .thumbnail h5 {
         font-size: 20px;
     }
+
+    .aboutPageImg, .aboutBanner {
+        height: 300px;
+    }
+
+    .aboutBanner h1 {
+        font-size: 50px;
+    }
+
+    .projectBanner, .projectPageImg {
+        height: 250px;
+    }
+
+    .projectBanner h1 {
+        font-size: 60px;
+    }
 }
 
 @media (max-width: 420px) {
     footer ul {
         font-size: 15px;
+    }
+
+    .projectImage {
+        zoom: 28%;
     }
 }

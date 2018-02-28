@@ -5,33 +5,28 @@ class About extends Component {
   render() {
     return (
         <div className="aboutPage">
-            <div class="aboutBanner">
-                <h1>About Jared Ryan</h1>
+            <div className="aboutBanner">
+                <h1>About <br/> Jared Ryan</h1>
                 <div className="aboutPageImg"></div>
             </div>
             <div className="introAndContact">
-                <div className="whySoftware">
-                    <div className="softwareSection">
-                        <div className="gradPic"></div>
-                        <div>
-                            <h3>Why Software?</h3>
-                            <p>I discovered my love for computer science midway through my bachelor’s degree as a Bioengineering student at UC Berkeley. To me, it feels like solving a logic puzzle with the resources of a computer, and I absolutely love it. The discovery of computer science reinvigorated my studies, and consequently, I decided to focus my electives on it. Now, I am pursuing a career in it.</p>
-                        </div>
+                <div className="row1">
+                    <div className="gradPic"></div>
+                    <div className="softwareText">
+                        <h3>Why Software?</h3>
+                        <p>I discovered my love for computer science midway through my bachelor’s degree as a Bioengineering student at UC Berkeley. To me, it feels like solving a logic puzzle with the resources of a computer, and I absolutely love it. The discovery of computer science reinvigorated my studies, and consequently, I decided to focus my electives on it. Now, I am pursuing a career in it.</p>
                     </div>
                 </div>
-
-                <div className="intro">
-                    <div className="contactMe">
-                        <div className="profilePic"></div>
-                        <div className="seeMore">
-                            <h3>Contact Me!</h3>
-                            <p><span>Email:</span>jryantennis@gmail.com</p>
-                            <p><span>Cell:</span>559-348-3595</p>
-                            <br/>
-                            <p>To see my projects, go <Link to="/projects">here</Link>.</p>
-                            <p>For my resume, go <Link to="/resume">here</Link>.</p>
-                            <p>Here is my <a href="https://github.com/jaredryan">Github</a> and <a href="https://www.linkedin.com/in/jared-m-ryan/">LinkedIn</a>.</p>
-                        </div>
+                <div className="row2">
+                    <div className="profilePic"></div>
+                    <div className="seeMore">
+                        <h3>Contact Me!</h3>
+                        <p><span>Email:</span>jryantennis@gmail.com</p>
+                        <p><span>Cell:</span>559-348-3595</p>
+                        <br/>
+                        <p>To see my projects, go <Link to="/projects">here</Link>.</p>
+                        <p>For my resume, go <Link to="/resume">here</Link>.</p>
+                        <p>Here is my <a href="https://github.com/jaredryan">Github</a> and <a href="https://www.linkedin.com/in/jared-m-ryan/">LinkedIn</a>.</p>
                     </div>
                 </div>
             </div>
