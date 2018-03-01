@@ -266,11 +266,105 @@ footer ul li span {
     color: rgb(250,50,0);
 }
 
-.aboutPage, .projectsPage, .funResume {
+.aboutPage, .projectsPage, .funResume, .webResumePage {
     background-color: rgb(210, 210, 225);
     color: black;
     margin-top: 0;
     padding: 20px 30px;
+}
+
+.webResumePage h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 36px;
+    color: rgb(150, 0, 0);
+    font-weight: 800;
+    border-bottom: 1px solid grey;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+}
+
+.skillsGrid div {
+    width: 170px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px auto;
+}
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px; */
+}
+
+.coursework h2 {
+    width: 600px;
+}
+
+.webResumePage h3, .webResumePage h4, .webResumePage h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.webResumePage h4 {
+    font-weight: 600;
+}
+
+.workExperience .work1,
+.education .edu1 {
+    margin-bottom: 30px;
+}
+
+.workExperience .work2,
+.education .edu2 {
+    margin-top: 30px;
+}
+
+.webResumePage h5 {
+    font-weight: 400;
+}
+
+.webResumePage > div {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.webResumePage .workExperience {
+    margin-bottom: 10px;
+}
+
+.goToProjects {
+    width: 260px;
+    display: block;
+    margin: 20px auto;
+}
+
+.webResumePage button {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(180, 180, 180);
+    padding: 1px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgb(150, 0, 0);
+    font-weight: 700;
+}
+
+.webResumePage button:hover {
+    cursor: pointer;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: 2px solid white;
+    padding: 0px;
+    font-weight: 600;
 }
 
 .resumePage {
@@ -278,6 +372,35 @@ footer ul li span {
     color: black;
     margin-top: 0;
     padding: 20px 30px;
+}
+
+.topResume {
+    width: 310px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bottomResume {
+    width: 310px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.topResume button,
+.bottomResume button {
+    background-color: rgb(90, 0, 0);
+    color: white;
+    border: 1px solid white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.topResume button:hover,
+.bottomResume button:hover {
+    background-color: white;
+    color: grey;
+    border: 2px solid silver;
+    font-weight: 400;
 }
 
 .resumeChoices {
@@ -453,10 +576,6 @@ footer ul li span {
     background-color: white;
     width: 100%;
     height: auto;
-}
-
-.aboutPage .introAndContact {
-    border-top: 2px solid black;
 }
 
 .aboutPage .myInterests,
