@@ -7,7 +7,6 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Resume from './Resume';
-import FunResume from './FunResume';
 
 class App extends Component {
 
@@ -24,7 +23,6 @@ class App extends Component {
                 <Route path="/about" component={About}/>
                 <Route path="/projects" component={Projects}/>
                 <Route path="/resume" component={Resume}/>
-                <Route path="/fun/resume" component={FunResume}/>
             </Switch>
             <Footer />
         </div>

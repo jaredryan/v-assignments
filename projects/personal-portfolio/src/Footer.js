@@ -1,19 +1,15 @@
 import React, {Component} from 'react'
 
-class Footer extends Component {
+class Footer extends Component {    
     render(){
         return(
             <footer>
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <ul className="info">
-                        <li><span>Email:</span>jryantennis@gmail.com</li>
-                        <li><span>Cell:</span>559-348-3595</li>
-                    </ul>
-                    <ul className="links">
-                        <a href="https://www.linkedin.com/in/jared-m-ryan/"><li>LinkedIn</li></a>
-                        <a href="https://github.com/jaredryan"><li>Github</li></a>
-                    </ul>
+                    <a href="https://github.com/jaredryan"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jared-m-ryan/"><i class="fa fa-linkedin"></i></a>
+                    <a href="mailto:jryantennis@gmail.com?subject=Hi Jared (from the Portfolio Website)"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/jared.ryan.94"><i class="fa fa-facebook-square"></i></a>
                 </fieldset>
             </footer>
         );

@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 const Resume = () => {
     return (
         <div className="webResumePage">
-            
-            <a href="Ryan_Jared_Resume.pdf" download="Ryan_Jared_Resume.pdf" className="goToProjects topResume"><button>Download Resume</button></a>
+            <div className="webBanner">
+                <h1>Resume</h1>
+                <a href="Ryan_Jared_Resume.pdf" download="Ryan_Jared_Resume.pdf" className="goToProjects downloadButton"><button>Download Resume</button></a>
+                <div className="webPageImg"></div>
+            </div>
             <div className="objective">
                 <h2>Objective</h2>
                 <p>Recent engineering UC Berkeley graduate with computer science emphasis who also learned frontend and full stack web development skills. Looking to apply computer science and web development training as a software developer or web developer.</p>
@@ -104,9 +107,7 @@ const Resume = () => {
                     </ul>
                 </div>
             </div>
-            <a href="Ryan_Jared_Resume.pdf" download="Ryan_Jared_Resume.pdf" className="goToProjects bottomResume"><button>Download Resume</button></a>
-        </div>
-        
+        </div>    
     );
 }
 
