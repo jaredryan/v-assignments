@@ -3,9 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
-import Pokedex from './Pokedex';
-import SingleBattles from './SingleBattles';
-import DoubleBattles from './DoubleBattles';
+import Start from './Start';
+
 
 class App extends Component {
   render() {
@@ -14,9 +13,7 @@ class App extends Component {
         <Navbar />
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/pokedex" component={Pokedex}/>
-            <Route path="/singlebattles" component={SingleBattles}/>
-            <Route path="/doublebattles" component={DoubleBattles}/>
+            <Route path="/start" component={Start}/>
         </Switch>
         <Footer />
       </div>

@@ -7,19 +7,19 @@ class Home extends Component {
       <div className="home">
         <h1>Welcome to Pokémon Team Builder!</h1>
         <div className="thumbnails">
-            <Link to="/pokedex" className="thumbnail">
+            <Link to="/start/pokedex" className="thumbnail">
                 <div className="thumbnailContainer">
                     <div className="pokedexThumbnail"></div>
                 </div>
                 <h2>See if a Pokémon deserves a spot on your team.</h2>
             </Link>
-            <Link to="/singlebattles" className="thumbnail">
+            <Link to="/start/singlebattles" className="thumbnail">
                 <div className="thumbnailContainer">
                     <div className="singleThumbnail"></div>
                 </div>
                 <h2>Set up a team for single battles.</h2>
             </Link>
-            <Link to="/doublebattles" className="thumbnail">
+            <Link to="/start/doublebattles" className="thumbnail">
                 <div className="thumbnailContainer">
                     <div className="doubleThumbnail"></div>
                 </div>

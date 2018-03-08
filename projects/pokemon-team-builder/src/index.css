@@ -14,10 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .loading {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('ajax-loader.gif') no-repeat center center;
+    width: 100px;
+    height: 50px;
+    background: url('Images/ajax-loader.gif') no-repeat center center;
+    margin: 20px auto;
 }
 
 nav {
@@ -43,6 +43,7 @@ nav ul {
     padding-top: 0;
     padding-left: 0;
 }
+
 .standard-nav > a, nav ul {
     display: flex;
     width: 50%;
@@ -99,7 +100,7 @@ nav h1 {
 }
 
 nav .navImage {
-    background: url("http://cdn-static.denofgeek.com/sites/denofgeek/files/pokemon_4.jpg"), no-repeat center center;
+    background: url("Images/pokemonNav.jpg"), no-repeat center center;
     height: 490px;
     width: 980px;
     zoom: 12.2%;
@@ -147,8 +148,9 @@ footer h5 {
     margin-bottom: 0;
 }
 
-.home {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png");
+.home,
+.startContainer {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("Images/pokemonBanner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -156,6 +158,10 @@ footer h5 {
     margin: 0;
     padding-bottom: 50px;
     margin-bottom: 50px;
+}
+
+.startContainer {
+    margin-bottom: 0px;
 }
 
 .home h1 {
@@ -183,7 +189,7 @@ footer h5 {
 }
 
 .pokedexThumbnail {
-    background:  url("https://cdn.bulbagarden.net/upload/thumb/7/78/150Mewtwo.png/250px-150Mewtwo.png"), no-repeat center center;
+    background: url("Images/mewtwo.png"), no-repeat center center;
     height: 250px;
     width: 250px;
     zoom: 100%;
@@ -191,7 +197,7 @@ footer h5 {
 }
 
 .singleThumbnail {
-    background:  url("http://www.mtv.co.uk/sites/default/files/styles/vimn_image_embed/public/mtv_uk/galleries/large/2017/06/06/pokken-tournament-.jpg?itok=YuhWynhr");
+    background: url("Images/pokken.jpg");
     background-repeat: no-repeat;
     background-position: top;
     height: 337px;
@@ -201,7 +207,7 @@ footer h5 {
 }
 
 .doubleThumbnail {
-    background:  url("https://www.serebii.net/anime/NextOn/623.jpg");
+    background: url("Images/doubleBattle.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
@@ -236,9 +242,225 @@ footer h5 {
     width: 100%;
 }
 
+.frontImage {
+    width: 100px;
+    height: 100px;
+    zoom: 100%;
+    margin: auto;
+}
+
+.startContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokedexContainer,
+.doubleBattleContainer,
+.singleBattleContainer {
+    width: 33.33%;
+    text-align: center;
+}
+
+.listContainer {
+    width: 66.66%;
+    text-align: center;
+}
+
+.startContainer h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.startContainer h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.doubleBattleContainer > h4,
+.singleBattleContainer > h4 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.pokedexContainer input {
+    width: 200px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pokedexContainer ul, .pokemon ul, .battle ul, ul.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pokedexResult p,
+.pokedexResult ul,
+.pokedexResult h6,
+.battle p,
+.battle ul,
+.battle h6 {
+    margin-top: 10px;
+}
+
+.pokedexContainer,
+.singleBattleContainer,
+.doubleBattleContainer, {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.pokedexContainer h5,
+.singleBattleContainer h5,
+.doubleBattleContainer h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.pokedexContainer h6,
+.singleBattleContainer h6,
+.doubleBattleContainer h6 {
+    font-weight: 300;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+
+}
+
+.pokemon {
+    width: 300px;
+    margin: auto;
+}
+
+.pokedexContainer button,
+.singleBattleContainer button,
+.doubleBattleContainer button {
+    width: 200px;
+    height: 36px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(80, 80, 80);
+    border: 1px solid silver;
+    background-color: white;
+}
+
+.pokedexContainer button:hover,
+.singleBattleContainer button:hover,
+.doubleBattleContainer button:hover {
+    cursor: pointer;
+    color: rgb(100, 100, 0);
+    border: 2px solid rgb(100, 100, 0);
+    background-color: rgb(200, 200, 255);
+}
+
+.pokemon, .pokemon h5, .pokemon li {
+    font-size: 16px;
+}
+
+.pokemon button {
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(80, 80, 80);
+    border: 1px solid silver;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pokemon button.delete {
+    margin-top: 0px;
+}
+
+.pokemon button:hover {
+    cursor: pointer;
+    color: rgb(100, 100, 0);
+    border: 2px solid rgb(100, 100, 0);
+    background-color: rgb(200, 200, 255);
+}
+
+.pokemon h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.pokemon span {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+}
+
+.pokemon li {
+    font-size: 16px;
+}
+
+.chosenList ul.list,
+.potentialList ul.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+/* Make into two columns only */
+@media (max-width: 900px) {
+    .pokedexContainer,
+    .doubleBattleContainer,
+    .singleBattleContainer,
+    .listContainer {
+        width: 46%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
 /* Remove picture in top left navbar */
 @media (max-width: 740px) {
+    .navImage {
+        display: none;
+    }
+}
 
+@media (max-width: 600px) {
+    .pokedexContainer,
+    .doubleBattleContainer,
+    .singleBattleContainer,
+    .listContainer {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .pokedexContainer h3,
+    .doubleBattleContainer h3,
+    .singleBattleContainer h3 {
+        margin-top: 50px;
+    }
+
+    .listContainer h3 {
+        margin-top: 100px;
+    }
+
+
+    .startContainer {
+        display: block;
+    }
 }
 
 /* Change nav items into Menu */
