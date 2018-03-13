@@ -26,7 +26,6 @@ bountyRoutes.post("/", (req, res) => {
 
 bountyRoutes.put("/:id", (req, res) => {
     Bounty.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedBounty) => {
-        console.log(req.params.id);
         if (err) return res.status(500).send(err);
         return res.send(updatedBounty)
     })
@@ -34,7 +33,6 @@ bountyRoutes.put("/:id", (req, res) => {
 
 bountyRoutes.delete("/:id", (req, res) => {
     Bounty.findByIdAndRemove(req.params.id, (err, removedBounty) => {
-        console.log(req.params.id);
         if (err) return res.status(500).send(err);
         return res.status(202).send(removedBounty);
     })
