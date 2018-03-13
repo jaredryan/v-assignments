@@ -21,7 +21,7 @@ class Bounty extends Component {
     }
     
     handleDelete() {
-        this.props.handleDelete(this.props.id);
+        this.props.handleDelete(this.props._id);
     }
 
     render() {
@@ -38,8 +38,9 @@ class Bounty extends Component {
                             living={this.props.living}
                             bountyAmount={this.props.bountyAmount}
                             type={this.props.type}
-                            id={this.props.id}
+                            _id={this.props._id}
                             editBounty={this.props.editBounty}
+                            key={this.props._id + this.props.firstName}
                         />
                         <button onClick={this.handleEdit}>Close</button>
                     </div>

@@ -9,7 +9,7 @@ class EditBountyForm extends Component {
             living: "",
             bountyAmount: "",
             type: "",
-            id: ""
+            _id: ""
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -24,7 +24,7 @@ class EditBountyForm extends Component {
             living: this.props.living,
             bountyAmount: this.props.bountyAmount,
             type: this.props.type,
-            id: this.props.id
+            _id: this.props._id
         });
     }
     handleChange(e) {

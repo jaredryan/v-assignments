@@ -1,5 +1,5 @@
 {
-  "name": "the-original-bounty-hunter",
+  "name": "mongoose-intro",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "mongoose": "^5.0.10",
+    "mongoose": "^5.0.9",
     "morgan": "^1.9.0"
   }
 }

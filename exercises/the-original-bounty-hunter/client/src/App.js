@@ -45,10 +45,10 @@ class App extends Component {
     }
     
     editBounty(item) {
-        axios.put("/bounties/" + item.id, item).then(response => {
+        axios.put("/bounties/" + item._id, item).then(response => {
             this.setState(prevState => {
                 const allBounties = prevState.allBounties.slice();
-                const bounty = allBounties.find(bounty => bounty.id === item.id)
+                const bounty = allBounties.find(bounty => bounty._id === item._id)
                 for (let property in item) {
                     bounty[property] = item[property]
                 }
@@ -63,7 +63,7 @@ class App extends Component {
         axios.delete("/bounties/" + id).then(response => {
             this.setState(prevState => {
                 const allBounties = prevState.allBounties.slice();
-                const bountyIndex = allBounties.findIndex(bounty => bounty.id === id);
+                const bountyIndex = allBounties.findIndex(bounty => bounty._id === id);
                 allBounties.splice(bountyIndex, 1);
                 return {
                     allBounties
@@ -80,8 +80,8 @@ class App extends Component {
                         living={bounty.living}
                         bountyAmount={bounty.bountyAmount}
                         type={bounty.type}
-                        id={bounty.id}
-                        key={bounty.id}
+                        _id={bounty._id}
+                        key={bounty._id + bounty.firstName}
                         handleDelete={this.handleDelete}
                         editBounty={this.editBounty}
                    />);
