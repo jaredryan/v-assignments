@@ -13,7 +13,9 @@ class IssueList extends Component {
     }
 
     render() {
-        const issues = this.props.issues && this.props.issues.map((issue, i) => {
+        const issues = this.props.issues && this.props.issues
+            .sort((a, b) => b.votes - a.votes)
+            .map((issue, i) => {
             return (
                 <Issue
                     key={i + issue.title}
