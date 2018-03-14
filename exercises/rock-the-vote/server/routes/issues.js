@@ -31,4 +31,34 @@ issueRoutes.delete('/:id', (req, res) => {
     });
 });
 
+issueRoutes.post('/:id/comments', (req, res) => {
+    Issue.findByIdAndUpdate(req.params.id, {$push: {comments: req.body}}, {new: true}, (err, updatedIssue) => {
+        if (err) return res.status(500).send(err);
+        return res.send(updatedIssue);
+    });
+});
+
+issueRoutes.put('/:id1/comment/:id2', (req, res) => {
+    Issue.findById(req.params.id1, (err, updatedIssue) => {
+        if (err) return res.status(500).send(err);
+        const updatedComment = updatedIssue.comments.find(comment => {
+            return comment._id == req.params.id2
+        });
+        for (let key in req.body) {
+            updatedComment[key] = req.body[key]
+        }
+        updatedIssue.save(err => {
+            if (err) return res.status(500).send(err);
+            return res.send(updatedIssue);
+        });
+    });
+});
+
+issueRoutes.delete('/:id1/comment/:id2', (req, res) => {
+    Issue.findByIdAndUpdate(req.params.id1, {$pull: {comments: { _id: req.params.id2}}}, {new: true}, (err, updatedIssue) => {
+        if (err) return res.status(500).send(err);
+        return res.send(updatedIssue);
+    });
+});
+
 module.exports = issueRoutes;

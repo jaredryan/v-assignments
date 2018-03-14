@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const issueSchema = new mongoose.Schema({
     title: {
@@ -7,7 +7,10 @@ const issueSchema = new mongoose.Schema({
     },
     description: String,
     votes: Number,
-    comments: [String]
+    comments: [{
+        text: String,
+        date: String
+    }]
 });
 
 module.exports = mongoose.model("Issue", issueSchema);
