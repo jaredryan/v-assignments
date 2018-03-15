@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Karma', serif;
     font-weight: 200;
 }
@@ -15,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(159, 237, 215, 0.5)), to(rgba(159, 237, 215, 0.5))), url("Images/title.jpg") no-repeat center center;
     background: linear-gradient(rgba(159, 237, 215, 0.5), rgba(159, 237, 215, 0.5)), url("Images/title.jpg") no-repeat center center;
     background-size: cover;
     height: 500px;
@@ -25,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 90px;
     font-weight: 200;
     color: black;
@@ -51,7 +54,8 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     margin: 30px auto;
     text-align: center;
-    box-shadow: 4px 8px 30px 1px black;
+    -webkit-box-shadow: 4px 8px 30px 1px black;
+            box-shadow: 4px 8px 30px 1px black;
     width: 400px;
     padding: 0px 10px;
     width: 100%;
@@ -70,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 .inputsWrapper {
     width: 50%;
     min-width: 340px;
-    box-shadow: 4px 8px 30px 1px black;
+    -webkit-box-shadow: 4px 8px 30px 1px black;
+            box-shadow: 4px 8px 30px 1px black;
     margin: 0px auto;
     padding: 0;
     border-radius: 5px;
@@ -111,7 +116,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 0.6px;
     margin-top: 10px;
-    box-shadow: 2px 2px 4px 1px black;
+    -webkit-box-shadow: 2px 2px 4px 1px black;
+            box-shadow: 2px 2px 4px 1px black;
 }
 
 .issueInfo h1 {
@@ -200,7 +206,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 15px auto;
     padding: 10px 20px;
     text-align: left;
-    box-shadow: 2px 2px 4px 1px black;
+    -webkit-box-shadow: 2px 2px 4px 1px black;
+            box-shadow: 2px 2px 4px 1px black;
 }
 
 .commentInfo h4,
@@ -231,7 +238,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .commentInfo .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
