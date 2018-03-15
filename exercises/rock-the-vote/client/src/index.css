@@ -15,6 +15,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(107, 104, 99)
+}
+
+button {
+    border: 1px solid rgb(207, 204, 199);
+}
+
 .banner {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(159, 237, 215, 0.5)), to(rgba(159, 237, 215, 0.5))), url("Images/title.jpg") no-repeat center center;
     background: linear-gradient(rgba(159, 237, 215, 0.5), rgba(159, 237, 215, 0.5)), url("Images/title.jpg") no-repeat center center;
@@ -118,6 +127,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     -webkit-box-shadow: 2px 2px 4px 1px black;
             box-shadow: 2px 2px 4px 1px black;
+}
+
+.newPost button:hover {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: 1px 1px 2px 0px black;
+            box-shadow: 1px 1px 2px 0px black;
+}
+
+.issueInfo form button:hover,
+.issueInfo .voting button:hover,
+.issueInfo button:hover {
+    background-color: #EDEAE5;
+    color: black;
 }
 
 .issueInfo h1 {
