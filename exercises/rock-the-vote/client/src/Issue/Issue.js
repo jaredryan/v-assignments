@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import EditForm from '../EditForm';
 
 const Issue = props => {
@@ -13,13 +13,13 @@ const Issue = props => {
                 />
                 :
                 <div className="issueInfo">
-                    <div>
-                        <h1>{props.title}</h1>
+                    <h1>{props.title}</h1>
+                    <h2>{props.description}</h2>
+                    <div className="voting">
                         <button onClick={props.handleMinusVote}>-</button>
+                        <h3>Votes: {props.votes}</h3>
                         <button onClick={props.handlePlusVote}>+</button>
                     </div>
-                    <h2>{props.description}</h2>
-                    <h3>Votes: {props.votes}</h3>
                     {props.commentList}
                     <form onSubmit={props.addComment}>
                             <input
@@ -29,6 +29,7 @@ const Issue = props => {
                                 placeholder="New Comment"
                                 onChange={props.handleChange}
                             />
+                            <br/>
                             <button type="submit">Post</button>
                     </form>
                     <button onClick={props.handleOpenForm}>Edit</button>

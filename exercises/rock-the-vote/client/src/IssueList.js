@@ -3,11 +3,7 @@ import { connect } from 'react-redux';
 import Issue from './Issue';
 import { getIssues } from './redux';
 
-class IssueList extends Component {
-    constructor() {
-        super();
-    };
-        
+class IssueList extends Component {        
     componentDidMount() {
         this.props.getIssues();
     }

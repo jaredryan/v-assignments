@@ -55,6 +55,7 @@ class Comment extends Component {
     }
 
     render() {
+        const timeDate = this.props.date.split("@");
         return (
             <div className="comment">
                 {this.state.isBeingEdited ?
@@ -72,9 +73,14 @@ class Comment extends Component {
                     :
                     <div className="commentInfo">
                         <h4>{this.props.text}</h4>
-                        <h5>{this.props.date}</h5>
-                        <button onClick={this.handleOpenForm}>Edit</button>
-                        <button onClick={this.handleDelete}>x</button>
+                        <div className="row">
+                            <h5>{timeDate[0]}</h5>
+                            <button onClick={this.handleOpenForm}>Edit</button>
+                        </div>
+                        <div className="row">
+                            <h5>{timeDate[1]}</h5>
+                            <button onClick={this.handleDelete}>Delete</button>
+                        </div>
                     </div>
                 }
             </div>

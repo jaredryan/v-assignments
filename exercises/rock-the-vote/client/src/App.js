@@ -5,6 +5,9 @@ import IssueList from './IssueList';
 const App = () => {
     return(
         <div>
+            <div className="banner">
+                <h1>We, the Issues</h1>
+            </div>
             <Form />
             <IssueList />
         </div>

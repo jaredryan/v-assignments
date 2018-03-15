@@ -204,7 +204,6 @@ const initialState = {
 export const reducer = (prevState = initialState, action) => {
     let issues;
     let updatedIssue;
-    let comments;
     let deletedIndex;
     switch (action.type) {
         case "GET_ISSUES":

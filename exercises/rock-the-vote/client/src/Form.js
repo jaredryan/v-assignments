@@ -28,28 +28,30 @@ class Form extends Component {
             description: ""
         });
     }
-    
-    // () {
-    // 
-    // }
 
     render() {
         return(
-            <form onSubmit={this.handleSubmit}>
-                <input 
-                    type="text"
-                    name="title"
-                    placeholder="Title"
-                    onChange={this.handleChange}
-                    value={this.state.title}
-                />
-                <input 
-                    type="text"
-                    name="description"
-                    placeholder="Description"
-                    onChange={this.handleChange}
-                    value={this.state.description}
-                />
+            <form onSubmit={this.handleSubmit} className="newPost">
+                <div className="inputsWrapper">
+                    <input 
+                        type="text"
+                        name="title"
+                        placeholder="Post a new issue, topic, etc."
+                        onChange={this.handleChange}
+                        value={this.state.title}
+                        className="title"
+                    />
+                    <br/>
+                    <textarea 
+                        type="text"
+                        name="description"
+                        placeholder="Tell us more about it"
+                        onChange={this.handleChange}
+                        value={this.state.description}
+                        className="description"
+                    />
+                </div>
+                <br/>
                 <button>Submit</button>
             </form>
         );
