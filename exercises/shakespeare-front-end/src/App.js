@@ -31,7 +31,7 @@ class App extends Component {
 
     renderReviews = () => {
         return this.state.reviews.map((review, index) => {
-            return  (<Card key={index + review.id}>
+            return  (<Card key={index + review.id} style={{marginBottom: "10px"}}>
                         <CardHeader
                           title={`Rating: ${review.rating}`}
                           subtitle={`${review.author}, ${review.publish_date.slice(5, 7)}-${review.publish_date.slice(8, 10)}-${review.publish_date.slice(0, 4)}`}

@@ -52,3 +52,9 @@ body {
     padding-top: 550px;
     margin-bottom: 50px;
 }
+
+@media(max-width: 450px) {
+    .title h1 {
+        font-size: 45px;
+    }
+}
